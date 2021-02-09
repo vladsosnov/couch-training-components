@@ -2,9 +2,14 @@
 
 @import './shared/header.css'; 
 @import './shared/button.css';
+@import './shared/input.css';
 @import './shared/user-card.css';
 @import './shared/topbar.css';
 
 @import './profile/profile-topbar.css';
+@import './profile/profile-sidebar.css';
+@import './profile/profile-main.css';
+@import './profile/profile-content-box.css';
 
+@import './shared.css';
 @import './reset.css';

@@ -1,1 +1,6 @@
-/* shared styles here */
+/* shared styles here 'ct-className' */
+
+/* before creating components */
+* {
+    transition: all 0.2s ease-in;
+}

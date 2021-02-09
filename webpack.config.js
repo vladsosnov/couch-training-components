@@ -97,24 +97,41 @@ module.exports = {
       filename: 'index.html',
     }),
     new HTMLWebpackPlugin({
-      template: path.resolve(__dirname, 'src/components/header.html'),
+      template: path.resolve(__dirname, 'src/components/shared/header.html'),
       filename: 'header.html',
     }),
     new HTMLWebpackPlugin({
-      template: path.resolve(__dirname, 'src/components/button.html'),
+      template: path.resolve(__dirname, 'src/components/shared/button.html'),
       filename: 'button.html',
     }),
     new HTMLWebpackPlugin({
-      template: path.resolve(__dirname, 'src/components/user-card.html'),
+      template: path.resolve(__dirname, 'src/components/shared/user-card.html'),
       filename: 'user-card.html',
     }),
     new HTMLWebpackPlugin({
-      template: path.resolve(__dirname, 'src/components/topbar.html'),
+      template: path.resolve(__dirname, 'src/components/shared/topbar.html'),
       filename: 'topbar.html',
     }),
     new HTMLWebpackPlugin({
-      template: path.resolve(__dirname, 'src/components/profile-topbar.html'),
+      template: path.resolve(__dirname, 'src/components/shared/input.html'),
+      filename: 'input.html',
+    }),
+
+    new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'src/components/profile/profile-topbar.html'),
       filename: 'profile-topbar.html',
+    }),
+    new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'src/components/profile/profile-sidebar.html'),
+      filename: 'profile-sidebar.html',
+    }),
+    new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'src/components/profile/profile-main.html'),
+      filename: 'profile-main.html',
+    }),
+    new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'src/components/profile/profile-content-box.html'),
+      filename: 'profile-content-box.html',
     }),
   ],
   devtool: isProd ? false : 'source-map',
