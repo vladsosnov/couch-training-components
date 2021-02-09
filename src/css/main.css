@@ -1,0 +1,10 @@
+@import './main-page/main-page.css';
+
+@import './shared/header.css'; 
+@import './shared/button.css';
+@import './shared/user-card.css';
+@import './shared/topbar.css';
+
+@import './profile/profile-topbar.css';
+
+@import './reset.css';
