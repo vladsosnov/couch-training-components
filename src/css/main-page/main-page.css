@@ -1,7 +1,5 @@
 .main-page {
-    min-height: 100vh;
     padding: 20px;
-    background: linear-gradient(180deg, #f8fcff 0%, #cee0eb 100%);
 }
 
 .main-page__title {

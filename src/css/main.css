@@ -1,15 +1,35 @@
 @import './main-page/main-page.css';
 
+@import './shared/alerts.css';
 @import './shared/header.css'; 
 @import './shared/button.css';
 @import './shared/input.css';
 @import './shared/user-card.css';
 @import './shared/topbar.css';
+@import './shared/dictionary.css';
+@import './shared/modals.css';
 
 @import './profile/profile-topbar.css';
 @import './profile/profile-sidebar.css';
 @import './profile/profile-main.css';
 @import './profile/profile-content-box.css';
+@import './profile/profile-content-box-empty.css';
+@import './profile/profile-feedback.css';
+@import './profile/profile-rating.css';
+@import './profile/profile-verification.css';
+@import './profile/profile-balance.css';
+@import './profile/profile-statistics.css';
+@import './profile/profile-settings.css';
+
+@import './search/search-filter';
+
+@import './word-learning/word-learning-confrim-form.css';
+@import './word-learning/word-learning-item.css';
+@import './word-learning/word-learning-list.css';
+@import './word-learning/word-learning-topbar.css';
+@import './word-learning/word-learning-word.css';
+
+@import './contacts/contacts-call-statistics.css';
 
 @import './shared.css';
 @import './reset.css';

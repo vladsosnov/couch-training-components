@@ -1,3 +1,13 @@
 .profile-main {
     background-color: red;
 }
+
+/* profile-main-contact-bar */
+.profile-main-contact-bar {
+    background-color: red;
+}
+
+/* profile-main-search-bar */
+.profile-main-search-bar {
+    background-color: yellow;
+}

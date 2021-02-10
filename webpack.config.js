@@ -96,6 +96,11 @@ module.exports = {
       template: path.resolve(__dirname, 'src/index.html'),
       filename: 'index.html',
     }),
+    
+    new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'src/components/shared/alerts.html'),
+      filename: 'alerts.html',
+    }),
     new HTMLWebpackPlugin({
       template: path.resolve(__dirname, 'src/components/shared/header.html'),
       filename: 'header.html',
@@ -113,8 +118,47 @@ module.exports = {
       filename: 'topbar.html',
     }),
     new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'src/components/shared/modal.html'),
+      filename: 'modal.html',
+    }),
+    new HTMLWebpackPlugin({
       template: path.resolve(__dirname, 'src/components/shared/input.html'),
       filename: 'input.html',
+    }),
+    new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'src/components/shared/dictionary.html'),
+      filename: 'dictionary.html',
+    }),
+
+    new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'src/components/search/search-filter.html'),
+      filename: 'search-filter.html',
+    }),
+
+    new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'src/components/contacts/contacts-call-statistics.html'),
+      filename: 'contacts-call-statistics.html',
+    }),
+
+    new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'src/components/word-learning/word-learning-confrim-form.html'),
+      filename: 'word-learning-confrim-form.html',
+    }),
+    new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'src/components/word-learning/word-learning-list.html'),
+      filename: 'word-learning-list.html',
+    }),
+    new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'src/components/word-learning/word-learning-topbar.html'),
+      filename: 'word-learning-topbar.html',
+    }),
+    new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'src/components/word-learning/word-learning-word.html'),
+      filename: 'word-learning-word.html',
+    }),
+    new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'src/components/word-learning/word-learning-item.html'),
+      filename: 'word-learning-item.html',
     }),
 
     new HTMLWebpackPlugin({
@@ -130,8 +174,36 @@ module.exports = {
       filename: 'profile-main.html',
     }),
     new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'src/components/profile/profile-main-topbar.html'),
+      filename: 'profile-main-topbar.html',
+    }),
+    new HTMLWebpackPlugin({
       template: path.resolve(__dirname, 'src/components/profile/profile-content-box.html'),
       filename: 'profile-content-box.html',
+    }),
+    new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'src/components/profile/profile-content-box-empty.html'),
+      filename: 'profile-content-box-empty.html',
+    }),
+    new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'src/components/profile/profile-feedback.html'),
+      filename: 'profile-feedback.html',
+    }),
+    new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'src/components/profile/profile-rating.html'),
+      filename: 'profile-rating.html',
+    }),
+    new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'src/components/profile/profile-balance.html'),
+      filename: 'profile-balance.html',
+    }),
+    new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'src/components/profile/profile-statistics.html'),
+      filename: 'profile-statistics.html',
+    }),
+    new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'src/components/profile/profile-settings.html'),
+      filename: 'profile-settings.html',
     }),
   ],
   devtool: isProd ? false : 'source-map',

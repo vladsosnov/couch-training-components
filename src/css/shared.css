@@ -2,5 +2,16 @@
 
 /* before creating components */
 * {
-    transition: all 0.2s ease-in;
+    transition: all 0.2s ease;
 }
+
+body {
+    background: linear-gradient(180deg, #f8fcff 0%, #cee0eb 100%);
+    min-height: 100vh;
+}
+
+.ct-title {}
+.ct-button {}
+.ct-input {}
+.ct-overlay {}
+.ct-component-container {}
