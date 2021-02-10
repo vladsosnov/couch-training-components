@@ -82,7 +82,18 @@
 }
 
 .ct-header .user-image {
+    position: relative;
     margin-right: 12px;
+    max-width: 48px;
+    padding: 3px;
+    border-radius: 50%;
+    border: 1px solid #DBDFF0;
+}
+
+.ct-header__user-status {
+    position: absolute;
+    top: 10px;
+    z-index: 10;
 }
 
 .ct-header .user-name {

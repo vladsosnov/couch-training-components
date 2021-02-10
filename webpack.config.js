@@ -129,6 +129,10 @@ module.exports = {
       template: path.resolve(__dirname, 'src/components/shared/dictionary.html'),
       filename: 'dictionary.html',
     }),
+    new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'src/components/shared/user-status.html'),
+      filename: 'user-status.html',
+    }),
 
     new HTMLWebpackPlugin({
       template: path.resolve(__dirname, 'src/components/search/search-filter.html'),

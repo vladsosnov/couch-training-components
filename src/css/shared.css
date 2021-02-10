@@ -7,7 +7,6 @@
 
 body {
     min-height: 100vh;
-    margin-top: 100px !important;
     background: linear-gradient(180deg, #f8fcff 0%, #cee0eb 100%);
 }
 
