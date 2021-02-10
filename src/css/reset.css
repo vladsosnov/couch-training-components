@@ -17,6 +17,8 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	/*  TODO fix it */
+	font-family: 'Montserrat', sans-serif;
 }
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -34,3 +36,5 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');

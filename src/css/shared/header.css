@@ -1,0 +1,144 @@
+.ct-header {
+    position: relative;
+    width: 100%;
+    height: 64px;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ct-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #DBDFF0;
+    box-shadow: 0px 5px 15px rgba(42, 47, 68, 0.06);
+    border-radius: 8px;
+}
+
+.ct-header__navigation {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.ct-header__logo {
+    margin-right: 24px;
+}
+
+.ct-header .nav-list {
+    display: flex;
+    margin: 0;
+}
+
+.ct-header .nav-list__item {
+    position: relative;
+    top: 2px;
+    padding: 20px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.ct-header .nav-list__item:hover,
+.ct-header .nav-list__item--active {
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(42, 47, 68, 0.1), inset 0px -2px 0px #dc1b48;
+    border-bottom: 2px solid;
+}
+
+.ct-header .nav-list__item:hover .link,
+.ct-header .nav-list__item--active .link {
+    color: #dc1b48;
+}
+
+.ct-header .nav-list__item:hover .img,
+.ct-header .nav-list__item--active .img {
+    filter: invert(23%) sepia(85%) saturate(5383%) hue-rotate(336deg) brightness(88%) contrast(94%);
+}
+
+.ct-header .link {
+    margin-left: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    color: #2A2F44;
+}
+
+.ct-header .link:hover {
+    text-decoration: none;
+}
+
+.ct-header__user {
+    display: flex;
+    align-items: center;
+}
+
+.ct-header .user-image {
+    margin-right: 12px;
+}
+
+.ct-header .user-name {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    color: #2a2f44;
+}
+
+.ct-header .user-role {
+    margin-right: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #6e7388;
+}
+
+.ct-header .user-balance {
+    margin-bottom: 0;
+    margin-right: 24px;
+    padding: 9px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    line-height: 14px;
+    font-size: 14px;
+    background-color: #fff;
+    box-shadow: 0px 3px 5px rgba(42, 47, 68, 0.1);
+    border-radius: 8px;
+}
+
+.ct-header .user-balance img {
+    margin-right: 8px;
+}
+
+.ct-header .user-profile-link {
+    margin-right: 24px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    color: #dc1b48;
+}
+
+.ct-header .user-profile-link:hover {
+    text-decoration: none;
+}
+
+.ct-header .user-profile-link .img {
+    margin-left: 10px;
+}
+
+.ct-header .user-auth {
+    padding: 20px;
+    padding-right: 0;
+    cursor: pointer;
+    border-left: 1px solid #dbdff0;
+}
