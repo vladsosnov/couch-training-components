@@ -18,6 +18,7 @@
 @import './profile/profile-balance.css';
 @import './profile/profile-statistics.css';
 @import './profile/profile-settings.css';
+@import './profile/profile-header.css';
 
 @import './search/search-filter';
 

@@ -45,6 +45,7 @@
     z-index: 10;
     cursor: pointer;
     transition: all 0.2s ease-in;
+    border-bottom: 2px solid transparent;
 }
 
 .ct-header .nav-list__item:hover,

@@ -195,6 +195,10 @@ module.exports = {
       template: path.resolve(__dirname, 'src/components/profile/profile-settings.html'),
       filename: 'profile-settings.html',
     }),
+    new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'src/components/profile/profile-header.html'),
+      filename: 'profile-header.html',
+    }),
   ],
   devtool: isProd ? false : 'source-map',
   module: {
