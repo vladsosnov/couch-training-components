@@ -97,6 +97,10 @@ body {
     font-weight: 700;
 }
 
+.ct-text--semi-bold {
+    font-weight: 600;
+}
+
 
 /* TODO only for our storybook */
 .ct-component-wrapper {
