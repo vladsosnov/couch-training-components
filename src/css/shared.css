@@ -93,6 +93,10 @@ body {
     color: #dc1b48;
 }
 
+.ct-text--bold {
+    font-weight: 700;
+}
+
 
 /* TODO only for our storybook */
 .ct-component-wrapper {

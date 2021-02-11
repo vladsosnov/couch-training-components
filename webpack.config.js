@@ -172,16 +172,8 @@ module.exports = {
       filename: 'profile-main.html',
     }),
     new HTMLWebpackPlugin({
-      template: path.resolve(__dirname, 'src/components/profile/profile-main-topbar.html'),
-      filename: 'profile-main-topbar.html',
-    }),
-    new HTMLWebpackPlugin({
       template: path.resolve(__dirname, 'src/components/profile/profile-content-box.html'),
       filename: 'profile-content-box.html',
-    }),
-    new HTMLWebpackPlugin({
-      template: path.resolve(__dirname, 'src/components/profile/profile-content-box-empty.html'),
-      filename: 'profile-content-box-empty.html',
     }),
     new HTMLWebpackPlugin({
       template: path.resolve(__dirname, 'src/components/profile/profile-feedback.html'),
