@@ -56,6 +56,8 @@ body {
 
 .ct-button--mini {
     padding: 10px 16px;
+    font-size: 12px;
+    line-height: 12px;
 }
 
 .ct-button__icon--left {
@@ -64,6 +66,16 @@ body {
 
 .ct-button__icon--right {
     margin-left: 10px;
+}
+
+.ct-reset-button {
+    padding: 0;
+    background: none;
+    border: none;
+}
+
+.ct-reset-button:focus {
+    outline: none;
 }
 
 /* ----- Buttons ------ */

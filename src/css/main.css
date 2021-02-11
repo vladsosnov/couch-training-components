@@ -2,11 +2,11 @@
 
 @import './shared/alerts.css';
 @import './shared/input.css';
-@import './shared/user-card.css';
 @import './shared/topbar.css';
 @import './shared/dictionary.css';
 @import './shared/modals.css';
 @import './shared/user-status.css';
+@import './shared/user-card.css';
 @import './shared/header.css'; 
 
 @import './profile/profile-topbar.css';
