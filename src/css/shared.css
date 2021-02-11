@@ -10,7 +10,12 @@ body {
     background: linear-gradient(180deg, #f8fcff 0%, #cee0eb 100%);
 }
 
-.ct-title {}
+.ct-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #2a2f44;
+}
 
 /* Buttons */
 
@@ -83,6 +88,10 @@ body {
 .ct-input {}
 .ct-overlay {}
 .ct-user-status {}
+
+.ct-text--red {
+    color: #dc1b48;
+}
 
 
 /* TODO only for our storybook */

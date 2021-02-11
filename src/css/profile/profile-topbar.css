@@ -1,3 +1,37 @@
 .profile-topbar {
-    background-color: red;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-topbar__title {
+    margin-bottom: 0;
+}
+
+.profile-topbar__search-btn {
+    margin-right: 32px;
+}
+
+.profile-topbar__buttons-wrapper {
+    display: flex;
+}   
+
+.profile-topbar__search-btn,
+.profile-topbar__sort-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 14px;
+    cursor: pointer;
+}
+
+.profile-topbar__search-btn .img,
+.profile-topbar__sort-btn .img {
+    margin-right: 10px;
+}
+
+.profile-topbar__search-btn {
+    color: #dc1b48;
 }

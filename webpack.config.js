@@ -112,10 +112,6 @@ module.exports = {
       filename: 'user-card.html',
     }),
     new HTMLWebpackPlugin({
-      template: path.resolve(__dirname, 'src/components/shared/topbar.html'),
-      filename: 'topbar.html',
-    }),
-    new HTMLWebpackPlugin({
       template: path.resolve(__dirname, 'src/components/shared/modal.html'),
       filename: 'modal.html',
     }),
