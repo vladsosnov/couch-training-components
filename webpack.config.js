@@ -120,6 +120,10 @@ module.exports = {
       filename: 'input.html',
     }),
     new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'src/components/shared/title.html'),
+      filename: 'title.html',
+    }),
+    new HTMLWebpackPlugin({
       template: path.resolve(__dirname, 'src/components/shared/dictionary.html'),
       filename: 'dictionary.html',
     }),

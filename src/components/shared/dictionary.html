@@ -5,9 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dictionary</title>
 </head>
-<body>
+<body class="ct-component-wrapper">
     <div class="dictionary">
-        Dictionary
+        <div class="dictionary__word-input">
+            <label>
+                <input
+                    type="text"
+                    class="language-input"
+                    placeholder="Выбирете язык для ввода"
+                >
+                <img src="../../img/shared/info.svg" alt="" class="language-icon">
+            </label>
+            <label>
+                <input
+                    type="text"
+                    class="write-input"
+                    placeholder="Введите слово"
+                >
+                <img src="../../img/shared/info.svg" alt="" class="write-icon">
+            </label>
+        </div>
+        <img
+            src="../../img/shared/info.svg"
+            alt=""
+            class="dictionary__translate-arrows"
+        >
+        <div class="dictionary__word-input">
+            <label>
+                <input
+                    type="text"
+                    class="language-input"
+                    placeholder="Выбирете язык для перевода"
+                >
+                <img src="../../img/shared/info.svg" alt="" class="language-icon">
+            </label>
+            <label>
+                <input
+                    type="text"
+                    class="write-input"
+                    placeholder="Введите слово"
+                >
+                <img src="../../img/shared/info.svg" alt="" class="write-icon">
+            </label>
+        </div>
+        <button class="ct-reset-button dictionary__close-icon">
+            <img src="../../img/shared/info.svg" alt="">
+        </button>
     </div>
 </body>
 </html>

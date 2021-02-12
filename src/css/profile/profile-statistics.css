@@ -1,3 +1,15 @@
-.profile-statistics {
-    background-color: red;
+.profile-statistics__title {
+    margin-bottom: 12px;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+    color: #dc1b48;
+}
+
+.profile-statistics__description {
+    max-width: 125px;
+    margin-bottom: 0;
+    font-size: 12px;
+    line-height: 18px;
+    color: #2a2f44;
 }
