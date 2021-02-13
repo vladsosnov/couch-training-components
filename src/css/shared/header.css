@@ -154,3 +154,17 @@
     cursor: pointer;
     border-left: 1px solid var(--light-gray);
 }
+
+.user-profile-link--active {
+    position: relative;
+    padding: 20px 0;
+}
+
+.user-profile-link--active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 75%;
+    border-bottom: 2px solid var(--primary-red);
+}

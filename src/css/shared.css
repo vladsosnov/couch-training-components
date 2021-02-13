@@ -24,7 +24,7 @@ body {
 }
 
 .ct-title {
-    margin-bottom: 48px;
+    margin-bottom: 0;
     font-size: 32px;
     font-weight: 700;
     line-height: 32px;

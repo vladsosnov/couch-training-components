@@ -1,4 +1,21 @@
-.profile-balance {
+.profile-balance__header {
+    margin-bottom: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-balance__buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px;
+}
+
+.profile-balance__buttons:first-child {
+    margin-right: 24px;
+}
+
+.profile-balance__body {
     background: var(--primary-white);
     box-shadow: 0px 3px 5px rgba(42, 47, 68, 0.1);
     border-radius: 8px;
