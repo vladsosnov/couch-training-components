@@ -152,16 +152,12 @@ module.exports = {
       filename: 'word-learning-list.html',
     }),
     new HTMLWebpackPlugin({
-      template: path.resolve(__dirname, 'src/components/word-learning/word-learning-topbar.html'),
-      filename: 'word-learning-topbar.html',
-    }),
-    new HTMLWebpackPlugin({
       template: path.resolve(__dirname, 'src/components/word-learning/word-learning-word.html'),
       filename: 'word-learning-word.html',
     }),
     new HTMLWebpackPlugin({
-      template: path.resolve(__dirname, 'src/components/word-learning/word-learning-item.html'),
-      filename: 'word-learning-item.html',
+      template: path.resolve(__dirname, 'src/components/word-learning/word-learning-settings-form.html'),
+      filename: 'word-learning-settings-form.html',
     }),
 
     new HTMLWebpackPlugin({

@@ -107,12 +107,14 @@ body {
 
 /* ----- Buttons ------ */
 
-.ct-input {}
 .ct-overlay {}
-.ct-user-status {}
 
 .ct-text--red {
     color: var(--primary-red);
+}
+
+.ct-text--green {
+    color: var(--primary-green);
 }
 
 .ct-text--bold {

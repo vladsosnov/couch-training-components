@@ -23,10 +23,9 @@
 @import './search/search-filter';
 
 @import './word-learning/word-learning-confrim-form.css';
-@import './word-learning/word-learning-item.css';
 @import './word-learning/word-learning-list.css';
-@import './word-learning/word-learning-topbar.css';
 @import './word-learning/word-learning-word.css';
+@import './word-learning/word-learning-settings-form.css';
 
 @import './contacts/contacts-call-statistics.css';
 

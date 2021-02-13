@@ -1,3 +1,77 @@
 .word-learning-list {
-    background-color: red;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.word-learning-list__head {
+    margin-bottom: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.word-learning-list__buttons-group {
+    display: grid;
+    grid-template-columns: 160px 200px;
+    grid-gap: 48px;
+}
+
+.buttons-group__link {
+    display: flex;
+    align-items: center;
+}
+
+.buttons-group__link {
+    font-size: 14px;
+    line-height: 14px;
+    color: var(--primary-gray);
+}
+
+.word-learning-list__body {
+    background-color: var(--primary-white);
+    box-shadow: 0px 3px 5px rgba(42, 47, 68, 0.1);
+    border-radius: 8px;
+}
+
+.word-list__item {
+    position: relative;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.word-list__item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--light-gray);
+}
+
+.word-list__flex-block {
+    display: flex;
+    align-items: center;
+}
+
+.word-list__flex-block p:nth-of-type(1) {
+    width: 160px;
+}
+
+.word-list__flex-block svg {
+    margin-left: 18px;
+    cursor: pointer;
+}
+
+.word-list__flex-block span {
+    font-size: 14px;
+    line-height: 14px;
+    color: var(--secondary-gray);
+}
+
+.word-list__item p {
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 14px;
 }
