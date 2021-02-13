@@ -151,7 +151,7 @@
 .profile-sidebar__mark-input {
     width: 100%;
     padding: 6px 16px;
-    border: 1px solid #dbdff0;
+    border: 1px solid var(--light-gray);
     border-radius: 8px;
     font-size: 12px;
     line-height: 18px;

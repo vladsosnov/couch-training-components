@@ -16,7 +16,7 @@
 }
 
 .profile-balance__operation-item:not(:last-child) {
-    border-bottom: 1px solid #dbdff0;
+    border-bottom: 1px solid var(--light-gray);
 }
 
 .operation-item__date {

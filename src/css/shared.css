@@ -3,7 +3,10 @@
 :root {
     --primary-red: #dc1b48;
     --primary-white: #ffffff;
+
     --primary-gray: #7894af;
+    --light-gray: #dbdff0;
+
     --primary-green: #35d057;
     --pramary-ebony: #2a2f44;
 
@@ -70,6 +73,14 @@ body {
     box-shadow: 0px 3px 5px rgba(42, 47, 68, 0.1);
 }
 
+.ct-button--clear {
+    background: none;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 14px;
+    color: var(--secondary-gray);
+}
+
 .ct-button--mini {
     padding: 10px 16px;
     font-size: 12px;
@@ -82,14 +93,6 @@ body {
 
 .ct-button__icon--right {
     margin-left: 10px;
-}
-
-.ct-button--clear {
-    background: none;
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 14px;
-    color: var(--secondary-gray);
 }
 
 .ct-reset-button {

@@ -129,7 +129,7 @@
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: #dbdff0;
+    background-color: var(--light-gray);
 }
 
 .user-card__empty-mark::before {
@@ -139,7 +139,7 @@
     width: 100%;
     height: 40px;
     opacity: 0.3;
-    background-color: #dbdff0;
+    background-color: var(--light-gray);
 }
 
 .user-card__mark-input {
