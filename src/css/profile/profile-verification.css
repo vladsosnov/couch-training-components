@@ -29,3 +29,20 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 48px;
 }
+
+.verification-step__title {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    color: var(--primary-ebony);
+}
+
+.verification-step__description {
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--secondary-gray);
+}
+
+.verification-step__upload-button {
+    max-width: 96px;
+}
