@@ -78,7 +78,8 @@ module.exports = {
   output: {
     filename: `./js/${fileName('js')}`,
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/couch-training-components/'
+    publicPath: ''
+    // publicPath: '/couch-training-components/'
   },
   devServer: {
     historyApiFallback: true,
@@ -114,10 +115,6 @@ module.exports = {
     new HTMLWebpackPlugin({
       template: path.resolve(__dirname, 'src/components/shared/modal.html'),
       filename: 'modal.html',
-    }),
-    new HTMLWebpackPlugin({
-      template: path.resolve(__dirname, 'src/components/shared/input.html'),
-      filename: 'input.html',
     }),
     new HTMLWebpackPlugin({
       template: path.resolve(__dirname, 'src/components/shared/title.html'),
@@ -210,6 +207,10 @@ module.exports = {
     new HTMLWebpackPlugin({
       template: path.resolve(__dirname, 'src/components/profile/profile-header.html'),
       filename: 'profile-header.html',
+    }),
+    new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'src/components/profile/profile-data-form.html'),
+      filename: 'profile-data-form.html',
     }),
   ],
   devtool: isProd ? false : 'source-map',

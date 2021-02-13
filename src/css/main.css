@@ -1,7 +1,6 @@
 @import './main-page/main-page.css';
 
 @import './shared/alerts.css';
-@import './shared/input.css';
 @import './shared/dictionary.css';
 @import './shared/modals.css';
 @import './shared/user-status.css';
@@ -19,6 +18,7 @@
 @import './profile/profile-statistics.css';
 @import './profile/profile-settings.css';
 @import './profile/profile-header.css';
+@import './profile/profile-data-form.css';
 
 @import './search/search-filter';
 

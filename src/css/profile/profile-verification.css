@@ -31,6 +31,7 @@
 }
 
 .verification-step__title {
+    margin-bottom: 24px;
     font-size: 14px;
     font-weight: 600;
     line-height: 14px;
@@ -38,11 +39,29 @@
 }
 
 .verification-step__description {
+    margin-bottom: 24px;
     font-size: 12px;
     line-height: 18px;
     color: var(--secondary-gray);
 }
 
-.verification-step__upload-button {
+.verification-step__del-wrapper {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.verification-step__file-button,
+.verification-step__delete-button {
     max-width: 96px;
+}
+
+.verification-step__del-wrapper button {
+    margin-right: 16px;
+}
+
+.verification-step__del-wrapper span {
+    font-size: 12px;
+    line-height: 12px;
+    color: var(--primary-red);
 }
