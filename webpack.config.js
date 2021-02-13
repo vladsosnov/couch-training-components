@@ -144,10 +144,6 @@ module.exports = {
     }),
 
     new HTMLWebpackPlugin({
-      template: path.resolve(__dirname, 'src/components/word-learning/word-learning-confrim-form.html'),
-      filename: 'word-learning-confrim-form.html',
-    }),
-    new HTMLWebpackPlugin({
       template: path.resolve(__dirname, 'src/components/word-learning/word-learning-list.html'),
       filename: 'word-learning-list.html',
     }),

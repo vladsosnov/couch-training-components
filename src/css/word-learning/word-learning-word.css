@@ -1,3 +1,98 @@
 .word-learning-word {
-    background-color: red;
+    position: relative;
+    max-width: 1120px;
+    min-height: 660px;
+    margin: 0 auto;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--primary-white);
+    box-shadow: 0px 3px 5px rgba(42, 47, 68, 0.1);
+    border-radius: 8px;
+}
+
+.word-learning-word__title {
+    margin-bottom: 48px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--pramary-ebony);
+}
+
+.word-learning-word__quiz .quiz-item {
+    width: 320px;
+    padding: 17px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-gray);
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    color: var(--primary-white);
+    cursor: pointer;
+}
+
+.word-learning-word__quiz .quiz-item:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.word-learning-word__quiz .quiz-item--success {
+    background-color: var(--primary-green);
+}
+
+.word-learning-word__result-alert {
+    position: absolute;
+    top: 68px;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 48px;
+    color: var(--secondary-gray);
+}
+
+.word-learning-word__quiz  .quiz-item--fail {
+    background-color: var(--primary-red);
+}
+
+.word-learning-word__quiz .quiz-item--chosen {
+    background-color: #c2c8de;
+    cursor: not-allowed;
+}
+
+.word-learning-word__confrim-group {
+    width: 320px;
+}
+
+.confrim-group__input {
+    position: relative;
+}
+
+.confrim-group__input .img {
+    position: absolute;
+    right: 4px;
+    top: 6px;
+    cursor: pointer;
+}
+
+.confrim-group__input input {
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 14px 16px;
+    background: var(--light-white);
+    border: 1px solid var(--light-gray);
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.confrim-group__input input,
+.confrim-group__input input::placeholder {
+    font-size: 14px;
+    line-height: 14px;
+    color: var(--secondary-gray);
+}
+
+.confrim-group__input input:focus {
+    outline: none;
 }
