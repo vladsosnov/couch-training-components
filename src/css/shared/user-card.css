@@ -3,7 +3,7 @@
     max-width: 358px;
     padding: 16px;
     display: flex;
-    background-color: #fff;
+    background-color: var(--primary-white);
     box-shadow: 0px 3px 5px rgba(42, 47, 68, 0.1);
     border-radius: 8px;
 }
@@ -16,7 +16,7 @@
 .user-card--empty {
     max-width: 358px;
     height: 167px;
-    background: #fff;
+    background: var(--primary-white);
     opacity: 0.25;
     border-radius: 8px;
 }
@@ -60,8 +60,8 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    background-color: #fff;
-    border: 1px solid #fff;
+    background-color: var(--primary-white);
+    border: 1px solid var(--primary-white);
     filter: drop-shadow(0px 2px 5px rgba(110, 115, 136, 0.2));
     border-radius: 2px;
 }
@@ -71,7 +71,7 @@
     font-size: 16px;
     font-weight: 600;
     line-height: 16px;
-    color: #2a2f44;
+    color: var(--pramary-ebony);
 }
 
 .user-card__status-role {
@@ -84,7 +84,7 @@
     margin: 0 10px 0 8px;
     font-size: 14px;
     line-height: 14px;
-    color: #dc1b48;
+    color: var(--primary-red);
 }
 
 .user-card__statistics {
@@ -120,7 +120,7 @@
 .user-card__stats-count {
     font-size: 12px;
     line-height: 12px;
-    color: #6e7388;
+    color: var(--secondary-gray);
 }
 
 .user-card__mark-block::before {
@@ -150,7 +150,7 @@
     font-weight: 600;
     font-size: 12px;
     line-height: 12px;
-    color: #2a2f44;
+    color: var(--pramary-ebony);
     border: none;
     background: transparent;
     z-index: 10;
@@ -164,7 +164,7 @@
     font-size: 12px;
     font-weight: 400;
     line-height: 12px;
-    color: #6e7388;
+    color: var(--secondary-gray);
 }
 
 .user-card__new-mark {

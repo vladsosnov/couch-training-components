@@ -128,6 +128,10 @@ module.exports = {
       filename: 'dictionary.html',
     }),
     new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'src/components/shared/dictionary-call-to-action.html'),
+      filename: 'dictionary-call-to-action.html',
+    }),
+    new HTMLWebpackPlugin({
       template: path.resolve(__dirname, 'src/components/shared/user-status.html'),
       filename: 'user-status.html',
     }),

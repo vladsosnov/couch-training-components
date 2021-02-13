@@ -4,18 +4,23 @@
     bottom: 8px;
     width: 800px;
     height: 400px;
-    padding: 32px;
-    display: grid;
-    grid-gap: 32px;
-    grid-template-columns: 1fr 1fr;
-    background: #7894AF;
+    padding: 32px 4px;
+    background: var(--primary-gray);
     border-radius: 8px;
     overflow: hidden;
 }
 
+.dictionary__wrapper {
+    padding: 0 28px;
+    margin-bottom: 24px;
+    display: grid;
+    grid-gap: 32px;
+    grid-template-columns: 1fr 1fr;
+}
+
 .dictionary__translate-arrows {
     position: absolute;
-    top: 35px;
+    top: 32px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -27,16 +32,16 @@
 
 .dictionary__word-input .language-input {
     margin-bottom: 8px;
-    color: #2a2f44;
-    background: #fff;
+    color: var(--pramary-ebony);
+    background: var(--primary-white);
     box-shadow: 0px 3px 5px rgba(42, 47, 68, 0.1);
     border: none;
 }
 
 .dictionary__word-input .write-input {
-    border: 1px solid #fff;
+    border: 1px solid var(--primary-white);
     background: transparent;
-    color: #fff;
+    color: var(--primary-white);
 }
 
 .dictionary__word-input .write-input,
@@ -59,19 +64,21 @@
 .dictionary__word-input .write-input::placeholder {
     font-size: 14px;
     line-height: 14px;
-    color: #fff;
+    color: var(--primary-white);
 }
 
 .language-icon {
     position: absolute;
     top: 18px;
     right: 20px;
+    cursor: pointer;
 }
 
 .write-icon {
     position: absolute;
-    top: 18px;
-    right: 8px;
+    top: 6px;
+    right: 4px;
+    cursor: pointer;
 }
 
 .dictionary__word-input .write-input:focus,
@@ -81,7 +88,75 @@
 
 .dictionary__close-icon {
     position: absolute;
-    right: 8px;
-    top: 8px;
+    right: 6px;
+    top: 6px;
+    cursor: pointer;
+}
+
+.dictionary__translate-block {
+    max-width: 360px;
+    max-height: 240px;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.dictionary__translate-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dictionary__translate-item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.translate-block__title {
+    margin-bottom: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    color: var(--primary-white);
+}
+
+.word-before-translate {
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    color: var(--primary-white);
+}
+
+.word-after-translate {
+    width: 258px;
+    max-width: 258px;
+    margin-bottom: 0;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--primary-white);
+}
+
+.dictionary__translate-block {
+    scrollbar-width: thin;
+    scrollbar-color:var(--primary-white);
+  }
+
+.dictionary__translate-block::-webkit-scrollbar {
+    width: 4px;
+}
+
+.dictionary__translate-block::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.dictionary__translate-block::-webkit-scrollbar-thumb {
+    background-color: var(--primary-white);
+    border-radius: 2px;
+}
+
+.dictionary-call-to-action {
+    position: fixed;
+    bottom: 24px;
+    left: 0;
     cursor: pointer;
 }

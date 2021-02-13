@@ -3,7 +3,7 @@
     font-size: 64px;
     font-weight: 700;
     line-height: 64px;
-    color: #dc1b48;
+    color: var(--primary-red);
 }
 
 .profile-statistics__description {
@@ -11,5 +11,5 @@
     margin-bottom: 0;
     font-size: 12px;
     line-height: 18px;
-    color: #2a2f44;
+    color: var(--pramary-ebony);
 }

@@ -33,5 +33,5 @@
 }
 
 .profile-topbar__search-btn {
-    color: #dc1b48;
+    color: var(--primary-red);
 }

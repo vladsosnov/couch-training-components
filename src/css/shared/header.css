@@ -50,14 +50,14 @@
 
 .ct-header .nav-list__item:hover,
 .ct-header .nav-list__item--active {
-    background-color: #fff;
-    box-shadow: 0 3px 6px rgba(42, 47, 68, 0.1), inset 0px -2px 0px #dc1b48;
+    background-color: var(--primary-white);
+    box-shadow: 0 3px 6px rgba(42, 47, 68, 0.1), inset 0px -2px 0px var(--primary-red);
     border-bottom: 2px solid;
 }
 
 .ct-header .nav-list__item:hover .link,
 .ct-header .nav-list__item--active .link {
-    color: #dc1b48;
+    color: var(--primary-red);
 }
 
 .ct-header .nav-list__item:hover .img,
@@ -70,7 +70,7 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 14px;
-    color: #2A2F44;
+    color: var(--pramary-ebony);
 }
 
 .ct-header .link:hover {
@@ -102,7 +102,7 @@
     font-size: 14px;
     font-weight: 600;
     line-height: 14px;
-    color: #2a2f44;
+    color: var(--pramary-ebony);
 }
 
 .ct-header .user-role {
@@ -110,7 +110,7 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 14px;
-    color: #6e7388;
+    color: var(--secondary-gray);
 }
 
 .ct-header .user-balance {
@@ -123,7 +123,7 @@
     font-weight: 600;
     line-height: 14px;
     font-size: 14px;
-    background-color: #fff;
+    background-color: var(--primary-white);
     box-shadow: 0px 3px 5px rgba(42, 47, 68, 0.1);
     border-radius: 8px;
 }
@@ -137,7 +137,7 @@
     font-size: 14px;
     font-weight: 600;
     line-height: 14px;
-    color: #dc1b48;
+    color: var(--primary-red);
 }
 
 .ct-header .user-profile-link:hover {

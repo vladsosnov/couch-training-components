@@ -2,7 +2,7 @@
     position: relative;
     width: 12px;
     height: 12px;
-    background: #fff;
+    background: var(--primary-white);
     box-shadow: 0px 2px 4px rgba(42, 47, 68, 0.2);
     border-radius: 8px;
 }
@@ -25,9 +25,9 @@
 }
 
 .user-status--online::after {
-    background-color: #35d057;
+    background-color: var(--primary-green);
 }
 
 .user-status--busy::after {
-    background-color: #dc1b48;
+    background-color: var(--primary-red);
 }

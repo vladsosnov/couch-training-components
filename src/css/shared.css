@@ -1,5 +1,15 @@
 /* shared styles here 'ct-className' */
 
+:root {
+    --primary-red: #dc1b48;
+    --primary-white: #ffffff;
+    --primary-gray: #7894af;
+    --primary-green: #35d057;
+    --pramary-ebony: #2a2f44;
+
+    --secondary-gray: #6e7388;
+}
+
 /* before creating components */
 * {
     transition: all 0.2s ease;
@@ -15,7 +25,7 @@ body {
     font-size: 32px;
     font-weight: 700;
     line-height: 32px;
-    color: #2a2f44;
+    color: var(--pramary-ebony);
 }
 
 /* Buttons */
@@ -30,7 +40,7 @@ body {
     font-size: 14px;
     font-weight: 600;
     line-height: 14px;
-    color: #fff;
+    color: var(--primary-white);
     border-radius: 8px;
     border: none;
     cursor: pointer;
@@ -41,22 +51,22 @@ body {
 }
 
 .ct-button--primary {
-    background: linear-gradient(270deg, #dc1b48 0%, #ff756d 100%);
+    background: linear-gradient(270deg, var(--primary-red) 0%, #ff756d 100%);
     box-shadow: 0px 3px 5px rgba(42, 47, 68, 0.1);
 }
 
 .ct-button--secondary {
-    background: #7894af;
+    background: var(--primary-gray);
     box-shadow: 0px 3px 5px rgba(42, 47, 68, 0.1);
 }
 
 .ct-button--success {
-    background: #35d057;
+    background: var(--primary-green);
     box-shadow: 0px 3px 5px rgba(42, 47, 68, 0.1);
 }
 
 .ct-button--danger {
-    background: #dc1b48;
+    background: var(--primary-red);
     box-shadow: 0px 3px 5px rgba(42, 47, 68, 0.1);
 }
 
@@ -79,7 +89,7 @@ body {
     font-size: 14px;
     font-weight: normal;
     line-height: 14px;
-    color: #6e7388;
+    color: var(--secondary-gray);
 }
 
 .ct-reset-button {
@@ -99,7 +109,7 @@ body {
 .ct-user-status {}
 
 .ct-text--red {
-    color: #dc1b48;
+    color: var(--primary-red);
 }
 
 .ct-text--bold {

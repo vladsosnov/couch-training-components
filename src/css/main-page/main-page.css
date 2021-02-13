@@ -4,7 +4,7 @@
 
 .main-page__title {
     margin-bottom: 32px;
-    color: #dc1b48;
+    color: var(--primary-red);
     font-size: 32px;
     font-weight: 700;
     text-align: center;
@@ -37,7 +37,7 @@
 }
 
 .components-item__link:hover {
-    color: #dc1b48;
+    color: var(--primary-red);
 }
 
 .components-item__link--ready {

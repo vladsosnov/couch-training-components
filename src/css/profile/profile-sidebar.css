@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #fff;
+    background: var(--primary-white);
     text-align: center;
     box-shadow: 0px 3px 5px rgba(42, 47, 68, 0.1);
     border-radius: 8px;
@@ -22,7 +22,7 @@
     text-transform: uppercase;
     font-size: 8px;
     line-height: 8px;
-    color: #6e7388;
+    color: var(--secondary-gray);
 }
 
 .profile-sidebar__status div {
@@ -38,7 +38,7 @@
     position: relative;
     top: 16px;
     margin-bottom: 0;
-    color: #fff;
+    color: var(--primary-white);
     font-size: 16px;
     font-weight: 600;
     line-height: 16px;
@@ -62,8 +62,8 @@
     position: absolute;
     bottom: -10px;
     left: 50%;
-    border: 1px solid #fff;
-    background-color: #fff;
+    border: 1px solid var(--primary-white);
+    background-color: var(--primary-white);
     filter: drop-shadow(0px 2px 5px rgba(110, 115, 136, 0.2));
     border-radius: 2px;
     transform: translateX(-50%);
@@ -74,7 +74,7 @@
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
-    color: #2a2f44;
+    color: var(--pramary-ebony);
 }
 
 .profile-sidebar__user-verefied {
@@ -83,7 +83,7 @@
     align-items: center;
     font-size: 14px;
     line-height: 14px;
-    color: #2a2f44;
+    color: var(--pramary-ebony);
 }
 
 .profile-sidebar__user-verefied img {
@@ -96,7 +96,7 @@
     left: 0;
     width: 100%;
     height: 48px;
-    background: linear-gradient(270deg, #DC1B48 0%, #FF756D 100%);
+    background: linear-gradient(270deg, var(--primary-red) 0%, #FF756D 100%);
 }
 
 .profile-sidebar__price::after {
@@ -123,7 +123,7 @@
     position: relative;
     font-size: 12px;
     line-height: 18px;
-    color: #2a2f44;
+    color: var(--pramary-ebony);
     z-index: 1;
 }
 
@@ -136,7 +136,7 @@
 .profile-sidebar__raiting span {
     font-size: 12px;
     line-height: 12px;
-    color: #6e7388;
+    color: var(--secondary-gray);
 }
 
 .profile-sidebar__comments {
@@ -155,7 +155,7 @@
     border-radius: 8px;
     font-size: 12px;
     line-height: 18px;
-    color: #6e7388;
+    color: var(--secondary-gray);
 }
 
 .profile-sidebar__mark-input:focus {
@@ -165,7 +165,7 @@
 .profile-sidebar__mark-input::placeholder {
     font-size: 12px;
     line-height: 18px;
-    color: #6e7388;
+    color: var(--secondary-gray);
 }
 
 .profile-sidebar__mark-button {

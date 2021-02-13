@@ -1,5 +1,5 @@
 .profile-header {
-    background: #fff;
+    background: var(--primary-white);
     box-shadow: 0px 3px 5px rgba(42, 47, 68, 0.1);
 }
 
@@ -16,7 +16,7 @@
     font-size: 14px;
     font-weight: 600;
     line-height: 14px;
-    color: #2a2f44;
+    color: var(--pramary-ebony);
 }
 
 .list-item:not(:last-child) {
@@ -35,16 +35,16 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 14px;
-    color: #6e7388;
+    color: var(--secondary-gray);
     transition: color 0.2s ease-in;
 }
 
 .list-item:hover .list-item__link,
 .list-item--active .list-item__link  {
-    color: #dc1b48;
+    color: var(--primary-red);
 }
 
 .list-item--active,
 .list-item:hover {
-    border-bottom: 2px solid #dc1b48;
+    border-bottom: 2px solid var(--primary-red);
 }
