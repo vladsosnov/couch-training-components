@@ -78,7 +78,7 @@ module.exports = {
   output: {
     filename: `./js/${fileName('js')}`,
     path: path.resolve(__dirname, 'dist'),
-    publicPath: ''
+    publicPath: '/couch-training-components/'
   },
   devServer: {
     historyApiFallback: true,

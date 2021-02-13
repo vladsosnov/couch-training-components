@@ -4,6 +4,7 @@
   "description": "CouchTraining-landing-page",
   "main": "index.js",
   "scripts": {
+    "deploy": "gh-pages -d dist",
     "build": "cross-env NODE_ENV=production webpack --mode production",
     "dev": "cross-env NODE_ENV=development webpack --mode development",
     "serve": "cross-env NODE_ENV=development webpack serve --mode development"
