@@ -176,6 +176,10 @@ module.exports = {
       filename: 'profile-sidebar.html',
     }),
     new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'src/components/profile/profile-verification.html'),
+      filename: 'profile-verification.html',
+    }),
+    new HTMLWebpackPlugin({
       template: path.resolve(__dirname, 'src/components/profile/profile-main.html'),
       filename: 'profile-main.html',
     }),

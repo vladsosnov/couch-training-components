@@ -1,3 +1,31 @@
 .profile-verification {
-    background-color: red;
+    background: var(--primary-white);
+    box-shadow: 0px 3px 5px rgba(42, 47, 68, 0.1);
+}
+
+.profile-verification__content {
+    max-width: 1120px;
+    padding: 48px 0;
+    margin: 0 auto;
+}
+
+.profile-verification__title {
+    margin-bottom: 24px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    color: var(--primary-ebony);
+}
+
+.profile-verification__description {
+    margin-bottom: 48px;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--primary-ebony);
+}
+
+.profile-verification__block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 48px;
 }
