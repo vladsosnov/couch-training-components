@@ -2,6 +2,10 @@
     max-width: 1120px;
 }
 
+.profile-statistics__head {
+    margin-bottom: 48px;
+}
+
 .profile-statistics__items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
