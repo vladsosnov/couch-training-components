@@ -6,7 +6,7 @@
     --primary-gray: #7894af;
     --light-gray: #dbdff0;
     --primary-green: #35d057;
-    --pramary-ebony: #2a2f44;
+    --primary-ebony: #2a2f44;
 
     --secondary-gray: #6e7388;
 }
@@ -26,7 +26,7 @@ body {
     font-size: 32px;
     font-weight: 700;
     line-height: 32px;
-    color: var(--pramary-ebony);
+    color: var(--primary-ebony);
 }
 
 /* Buttons */

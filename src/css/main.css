@@ -1,6 +1,6 @@
 @import './main-page/main-page.css';
 
-@import './shared/alerts.css';
+@import './shared/custom-alert.css';
 @import './shared/dictionary.css';
 @import './shared/modals.css';
 @import './shared/user-status.css';

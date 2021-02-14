@@ -97,8 +97,8 @@ module.exports = {
     }),
     
     new HTMLWebpackPlugin({
-      template: path.resolve(__dirname, 'src/components/shared/alerts.html'),
-      filename: 'alerts.html',
+      template: path.resolve(__dirname, 'src/components/shared/custom-alert.html'),
+      filename: 'custom-alert.html',
     }),
     new HTMLWebpackPlugin({
       template: path.resolve(__dirname, 'src/components/shared/header.html'),

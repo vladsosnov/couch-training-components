@@ -1,0 +1,99 @@
+/* uncomment the code below when alerts will be used 1 per page  */
+
+.custom-alert {
+    /* position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; */
+    padding: 12px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.custom-alert__content-wrap {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-alert__user-img {
+    max-width: 56px;
+    border-radius: 50%;
+    padding: 3px;
+    border: 1px solid #C2C8DE;
+    box-sizing: border-box;
+}
+
+.custom-alert button {
+    position: absolute;
+    right: 32px;
+    cursor: pointer;
+}
+
+.custom-alert .custom-alert__user-avatar {
+    position: relative;
+    margin-right: 16px;
+}
+
+.custom-alert__user-avatar .icon-img {
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+}
+
+.custom-alert__action-text {
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--primary-white);
+}
+
+.custom-alert--add-mode .custom-alert__user-img,
+.custom-alert--unblock-mode .custom-alert__user-img,
+.custom-alert--words-send-mode .custom-alert__user-img {
+    border: 1px solid var(--primary-white);
+}
+
+.custom-alert--add-mode .custom-alert__action-text,
+.custom-alert--unblock-mode .custom-alert__action-text,
+.custom-alert--words-send-mode .custom-alert__action-text {
+    color: var(--primary-ebony);
+}
+
+.custom-alert__word-alert {
+    position: relative;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: var(--primary-white);
+}
+
+.custom-alert__filter-blur {
+    position: absolute;
+    top: 0;
+}
+
+
+/*  backgrounds */
+
+.custom-alert--devele-mode,
+.custom-alert--block-mode {
+    background-color: var(--primary-ebony);
+}
+
+.custom-alert--add-mode,
+.custom-alert--unblock-mode,
+.custom-alert--words-send-mode {
+    background-color: #c2c8de;
+}
+
+.custom-alert--word-mode {
+    position: relative;
+    background-color: #000;
+    overflow: hidden;
+}
