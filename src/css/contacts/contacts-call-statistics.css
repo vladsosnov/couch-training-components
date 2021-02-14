@@ -8,11 +8,6 @@
 
 .contacts-call-statistics__back-link {
     margin-bottom: 26px;
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-    line-height: 12px;
-    color: var(--primary-gray);
 }
 
 .contacts-call-statistics__back-link:hover {

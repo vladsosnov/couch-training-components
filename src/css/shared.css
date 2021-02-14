@@ -123,6 +123,18 @@ body {
     font-weight: 600;
 }
 
+.ct-back-link {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 12px;
+    color: var(--primary-gray);
+}
+
+.ct-back-link .img {
+    margin-right: 10px;
+}
+
 
 /* TODO only for our storybook */
 .ct-component-wrapper {
