@@ -1,3 +1,7 @@
 .profile-contacts {
-    background-color: red;
+    padding: 48px;
+    display: grid;
+    grid-gap: 24px;
+    grid-template-columns: repeat(auto-fill, 368px);
+    justify-content: center;
 }
