@@ -1,3 +1,41 @@
 .profile-cabinet {
-    background-color: red;
+    max-width: 1120px;
+    margin: 0 auto;
 }
+
+.profile-cabinet__head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-cabinet__user-status {}
+
+.profile-cabinet__user-status .visibility {
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 14px;
+    color: var(--secondary-gray);
+}
+
+.profile-cabinet__user-status .status-dropdown {
+    background: var(--primary-white);
+    box-shadow: 0px 3px 5px rgba(42, 47, 68, 0.1);
+    border-radius: 8px;
+}
+
+.status-dropdown .name {
+    display: flex;
+    align-items: center;
+}
+
+.status-dropdown .status-type {
+    margin-bottom: 0;
+    margin-left: 8px;
+    font-size: 14px;
+    line-height: 14px;
+    color: var(--primary-ebony);
+}
+
+.profile-cabinet__user-main-info {}
+
+.profile-cabinet__user-type {}
