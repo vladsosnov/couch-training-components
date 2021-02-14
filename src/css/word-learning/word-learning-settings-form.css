@@ -9,6 +9,7 @@
 .word-learning-settings-form__controll-block {
     position: relative;
     padding: 24px;
+    padding-top: 18px;
 }
 
 .word-learning-settings-form__controll-block:nth-of-type(1):after,
@@ -22,8 +23,12 @@
     background-color: var(--light-gray);
 }
 
+.word-learning-settings-form__controll-block:not(:last-child) {
+    padding-bottom: 24px;
+}
+
 .word-learning-settings-form__head {
-    margin-bottom: 24px;
+    margin-bottom: 18px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,7 +49,7 @@
 .word-learning-settings-form__description {
     position: relative;
     margin-bottom: 0;
-    padding-bottom: 16px;
+    padding-bottom: 12px;
     font-size: 12px;
     line-height: 18px;
     color: var(--secondary-gray);
@@ -125,13 +130,12 @@ input[type='checkbox']#checkbox_3:checked+label:before {
 
 .language-block {
     position: relative;
-    padding: 16px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.language-block::after {
+.language-block:not(:last-child)::after {
     content: '';
     position: absolute;
     left: 0;
@@ -141,7 +145,19 @@ input[type='checkbox']#checkbox_3:checked+label:before {
     background-color: var(--light-gray);
 }
 
+.language-block span {
+    font-size: 12px;
+    line-height: 40px;
+    color: var(--primary-ebony);
+}
+
+.language-block .img {
+    position: relative;
+    right: 16px;
+}
+
 .word-learning-settings-form__new-language {
+    position: relative;
     padding: 16px 24px;
     background: #f5f6fc;
 }
@@ -164,6 +180,19 @@ input[type='checkbox']#checkbox_3:checked+label:before {
 
 .word-learning-settings-form__new-language input:focus {
     outline: none;
+}
+
+.word-learning-settings-form__new-language .img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 80px;
+}
+
+.word-learning-settings-form__new-language button {
+    position: relative;
+    left: 3px;
+    cursor: pointer;
 }
 
 .word-learning-settings-form__set-settings {
