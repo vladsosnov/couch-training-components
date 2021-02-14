@@ -132,6 +132,10 @@ module.exports = {
       template: path.resolve(__dirname, 'src/components/shared/user-status.html'),
       filename: 'user-status.html',
     }),
+    new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'src/components/shared/privacy-policy.html'),
+      filename: 'privacy-policy.html',
+    }),
 
     new HTMLWebpackPlugin({
       template: path.resolve(__dirname, 'src/components/search/search-filter.html'),
@@ -203,6 +207,14 @@ module.exports = {
     new HTMLWebpackPlugin({
       template: path.resolve(__dirname, 'src/components/profile/profile-data-form.html'),
       filename: 'profile-data-form.html',
+    }),
+    new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'src/components/profile/profile-cabinet.html'),
+      filename: 'profile-cabinet.html',
+    }),
+    new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'src/components/profile/profile-contacts.html'),
+      filename: 'profile-contacts.html',
     }),
   ],
   devtool: isProd ? false : 'source-map',

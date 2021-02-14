@@ -6,6 +6,7 @@
 @import './shared/user-status.css';
 @import './shared/user-card.css';
 @import './shared/header.css'; 
+@import './shared/privacy-policy.css';
 
 @import './profile/profile-topbar.css';
 @import './profile/profile-sidebar.css';
@@ -19,6 +20,8 @@
 @import './profile/profile-settings.css';
 @import './profile/profile-header.css';
 @import './profile/profile-data-form.css';
+@import './profile/profile-cabinet.css';
+@import './profile/profile-contacts.css';
 
 @import './search/search-filter';
 
