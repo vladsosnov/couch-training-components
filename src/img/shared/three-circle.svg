@@ -1,5 +1,1 @@
-<svg width="340" height="340" viewBox="0 0 340 340" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle opacity="0.5" cx="170" cy="170" r="109.5" stroke="white"/>
-<circle opacity="0.3" cx="170" cy="170" r="139.5" stroke="white"/>
-<circle opacity="0.25" cx="170" cy="170" r="169.5" stroke="white"/>
-</svg>
+<svg width="340" height="340" fill="none" xmlns="http://www.w3.org/2000/svg"><circle opacity=".5" cx="170" cy="170" r="109.5" stroke="#fff"/><circle opacity=".3" cx="170" cy="170" r="139.5" stroke="#fff"/><circle opacity=".25" cx="170" cy="170" r="169.5" stroke="#fff"/></svg>

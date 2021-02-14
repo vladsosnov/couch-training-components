@@ -154,6 +154,7 @@ input[type='checkbox']#checkbox_3:checked+label:before {
 .language-block .img {
     position: relative;
     right: 16px;
+    cursor: pointer;
 }
 
 .word-learning-settings-form__new-language {
@@ -191,7 +192,7 @@ input[type='checkbox']#checkbox_3:checked+label:before {
 
 .word-learning-settings-form__new-language button {
     position: relative;
-    left: 3px;
+    left: 5px;
     cursor: pointer;
 }
 

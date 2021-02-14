@@ -32,7 +32,7 @@
 
 .dictionary__word-input .language-input {
     margin-bottom: 8px;
-    color: var(--pramary-ebony);
+    color: var(--primary-ebony);
     background: var(--primary-white);
     box-shadow: 0px 3px 5px rgba(42, 47, 68, 0.1);
     border: none;

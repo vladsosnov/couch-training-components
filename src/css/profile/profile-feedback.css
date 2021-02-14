@@ -49,7 +49,7 @@
     color: var(--primary-red);
 }
 
-.item-head__reply-link img {
+.item-head__reply-link .img {
     margin-right: 8px;
 }
 

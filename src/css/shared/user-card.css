@@ -71,7 +71,7 @@
     font-size: 16px;
     font-weight: 600;
     line-height: 16px;
-    color: var(--pramary-ebony);
+    color: var(--primary-ebony);
 }
 
 .user-card__status-role {
@@ -106,9 +106,9 @@
     text-decoration: none;
 }
 
-.user-card__stars img,
-.user-card__comments img,
-.user-card__budget img {
+.user-card__stars .img,
+.user-card__comments .img,
+.user-card__budget .img {
     margin-bottom: 9px;
 }
 
@@ -150,7 +150,7 @@
     font-weight: 600;
     font-size: 12px;
     line-height: 12px;
-    color: var(--pramary-ebony);
+    color: var(--primary-ebony);
     border: none;
     background: transparent;
     z-index: 10;

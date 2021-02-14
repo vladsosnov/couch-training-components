@@ -70,7 +70,7 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 14px;
-    color: var(--pramary-ebony);
+    color: var(--primary-ebony);
 }
 
 .ct-header .link:hover {
@@ -102,7 +102,7 @@
     font-size: 14px;
     font-weight: 600;
     line-height: 14px;
-    color: var(--pramary-ebony);
+    color: var(--primary-ebony);
 }
 
 .ct-header .user-role {
@@ -128,7 +128,7 @@
     border-radius: 8px;
 }
 
-.ct-header .user-balance img {
+.ct-header .user-balance .img {
     margin-right: 8px;
 }
 

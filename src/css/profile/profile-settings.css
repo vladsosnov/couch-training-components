@@ -72,13 +72,13 @@
     font-size: 14px;
     font-weight: 600;
     line-height: 14px;
-    color: var(--pramary-ebony);
+    color: var(--primary-ebony);
 }
 
 .profile-settings__status {
     font-size: 12px;
     line-height: 12px;
-    color: var(--pramary-ebony);
+    color: var(--primary-ebony);
 }
 
 .profile-settings__text--unchecked,
@@ -103,7 +103,7 @@
     border-radius: 8px;
 }
 
-.profile-settings__info-item img {
+.profile-settings__info-item .img {
     transform: rotate(90deg);
 }
 

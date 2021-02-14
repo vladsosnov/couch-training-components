@@ -33,7 +33,7 @@
     margin-bottom: 24px;
     font-size: 14px;
     line-height: 14px;
-    color: var(--pramary-ebony);
+    color: var(--primary-ebony);
 }
 
 .filter-list__label {
@@ -41,7 +41,7 @@
     height: 12px;
     font-size: 12px;
     line-height: 12px;
-    color: var(--pramary-ebony);
+    color: var(--primary-ebony);
     cursor: pointer;
 }
 
