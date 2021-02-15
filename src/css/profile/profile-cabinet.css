@@ -4,17 +4,13 @@
 }
 
 .profile-cabinet__head {
+    margin-bottom: 48px;
     display: flex;
     justify-content: space-between;
 }
 
-.profile-cabinet__user-status {}
-
-.profile-cabinet__user-status .visibility {
-    margin-bottom: 12px;
-    font-size: 14px;
-    line-height: 14px;
-    color: var(--secondary-gray);
+.profile-cabinet__user-status {
+    margin-top: 30px;
 }
 
 .profile-cabinet__user-status .status-dropdown {
@@ -36,6 +32,99 @@
     color: var(--primary-ebony);
 }
 
-.profile-cabinet__user-main-info {}
+.profile-cabinet__user-main-info {
+    text-align: center;
+}
 
-.profile-cabinet__user-type {}
+.profile-cabinet__user-avatar {
+    position: relative;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.profile-cabinet__user-avatar .img {
+    max-width: 154px;
+    padding: 3px;
+    background: var(--primary-white);
+    border-radius: 50%;
+    border: 1px solid #C2C8DE;
+    box-sizing: border-box;
+}
+
+.profile-cabinet__user-avatar button .svg {
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.profile-cabinet__data {
+
+}
+
+.profile-cabinet__data .name {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 32px;
+    color: var(--primary-ebony);
+}
+
+.profile-cabinet__verification {
+    display: flex;
+}
+
+.profile-cabinet__verification p {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.profile-cabinet__verification p .img {
+    margin-right: 8px;
+}
+
+.profile-cabinet__verification .verification-label {
+    margin-right: 24px;
+}
+
+.profile-cabinet__user-type {
+    margin-top: 30px;
+}
+
+.profile-cabinet__user-type .capture,
+.profile-cabinet__user-status .capture {
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 14px;
+    color: var(--secondary-gray);
+}
+
+.profile-cabinet__user-type .type--interlocutor,
+.profile-cabinet__user-type .type--tutor {
+    width: 200px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 3px 5px rgba(42, 47, 68, 0.1);
+    border-radius: 8px;
+}
+
+.profile-cabinet__user-type .type--interlocutor {
+    background: linear-gradient(270deg, #FC5E55 0%, #FF9791 100%);
+}
+
+.profile-cabinet__user-type .type--tutor {
+    background: linear-gradient(270deg, #DC1B48 0%, #FF756D 100%);
+}
+
+.profile-cabinet__user-type .type--interlocutor span,
+.profile-cabinet__user-type .type--tutor span {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    color: var(--primary-white);
+}
