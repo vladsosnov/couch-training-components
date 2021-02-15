@@ -13,23 +13,10 @@
     margin-top: 30px;
 }
 
-.profile-cabinet__user-status .status-dropdown {
+.profile-cabinet__user-status .status-selector {
     background: var(--primary-white);
     box-shadow: 0px 3px 5px rgba(42, 47, 68, 0.1);
     border-radius: 8px;
-}
-
-.status-dropdown .name {
-    display: flex;
-    align-items: center;
-}
-
-.status-dropdown .status-type {
-    margin-bottom: 0;
-    margin-left: 8px;
-    font-size: 14px;
-    line-height: 14px;
-    color: var(--primary-ebony);
 }
 
 .profile-cabinet__user-main-info {
@@ -74,6 +61,7 @@
 
 .profile-cabinet__verification {
     display: flex;
+    justify-content: center;
 }
 
 .profile-cabinet__verification p {
@@ -86,8 +74,8 @@
     margin-right: 8px;
 }
 
-.profile-cabinet__verification .verification-label {
-    margin-right: 24px;
+.profile-cabinet__verification .number {
+    margin-left: 24px;
 }
 
 .profile-cabinet__user-type {
@@ -127,4 +115,63 @@
     font-size: 14px;
     line-height: 14px;
     color: var(--primary-white);
+}
+
+
+/* custom selector */
+.profile-cabinet__select-status {
+    width: 160px;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--primary-white);
+    box-shadow: 0px 3px 5px rgba(42, 47, 68, 0.1);
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 14px;
+    color: var(--primary-ebony);
+    border: none;
+    cursor: pointer;
+}
+
+.profile-cabinet__select-status:focus {
+    outline: none;
+}
+
+.profile-cabinet__user-status .flex-block {
+    display: flex;
+}
+
+.profile-cabinet__user-status .user-status {
+    margin-right: 8px;
+}
+
+.profile-cabinet__user-status .dropdown-toggle::after {
+    display: none !important;
+}
+
+.profile-cabinet__user-status .dropdown-menu {
+    width: 160px;
+    margin-top: 0;
+    padding: 0;
+    border: none;
+    background: var(--primary-white);
+    box-shadow: 0px 15px 10px rgba(42, 47, 68, 0.1);
+    border-radius: 0px 0px 8px 8px;
+}
+
+.profile-cabinet__user-status .dropdown-item {
+    padding: 18px;
+    font-size: 14px;
+    line-height: 14px;
+    color: var(--primary-ebony);
+}
+
+.profile-cabinet__user-status .dropdown-item:last-child:hover {
+    border-radius: 0px 0px 8px 8px;
+}
+
+.btn-group.show .ct-button-reset {
+    border-radius: 8px 8px 0 0;
 }
