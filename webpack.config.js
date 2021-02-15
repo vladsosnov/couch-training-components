@@ -141,6 +141,10 @@ module.exports = {
       template: path.resolve(__dirname, 'src/components/search/search-filter.html'),
       filename: 'search-filter.html',
     }),
+    new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'src/components/search/search-page.html'),
+      filename: 'search-page.html',
+    }),
 
     new HTMLWebpackPlugin({
       template: path.resolve(__dirname, 'src/components/contacts/contacts-call-statistics.html'),

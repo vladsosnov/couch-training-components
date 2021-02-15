@@ -23,7 +23,8 @@
 @import './profile/profile-cabinet.css';
 @import './profile/profile-contacts.css';
 
-@import './search/search-filter';
+@import './search/search-filter.css';
+@import './search/search-page.css';
 
 @import './word-learning/word-learning-list.css';
 @import './word-learning/word-learning-word.css';
