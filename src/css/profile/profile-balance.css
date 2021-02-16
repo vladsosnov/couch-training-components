@@ -58,3 +58,39 @@
     line-height: 48px;
     color: var(--secondary-gray);
 }
+
+@media (max-width: 992px) {
+    .profile-balance__operation-item {
+        padding: 0 10px;
+    }
+
+    .profile-balance__buttons:first-child {
+        margin-right: 10px;
+    }
+
+    .profile-balance__buttons {
+        grid-gap: 16px;
+        grid-template-columns: 150px 130px;
+    }
+
+    .operation-item__system {
+        font-size: 13px;
+    }
+
+    .operation-item__date {
+        margin: 0 10px;
+        font-size: 13px;
+    }
+
+    .operation-item__cost {
+        margin-right: 10px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .operation-item__system .duration {
+        display: none;
+    }
+    
+}

@@ -50,8 +50,8 @@
 
 .contacts-call-statistics__duration {
     margin-bottom: 0;
-    font-weight: bold;
     font-size: 32px;
+    font-weight: 700;
     line-height: 40px;
     color: var(--primary-ebony);
 }
@@ -100,4 +100,13 @@
     font-size: 14px;
     line-height: 48px;
     color: var(--primary-ebony);
+}
+
+@media (max-width: 992px) {
+    .contacts-call-statistics__count {
+        margin-bottom: 4px;
+    }
+    .contacts-call-statistics__duration {
+        font-size: 28px;
+    }
 }

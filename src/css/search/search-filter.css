@@ -66,3 +66,10 @@
     max-width: 184px;
     max-height: 32px;
 }
+
+@media (max-width: 992px) {
+    .search-filter__block {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 32px;
+    }
+}

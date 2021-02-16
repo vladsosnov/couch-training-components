@@ -1,12 +1,7 @@
 .profile-topbar {
-    margin-bottom: 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.profile-topbar__title {
-    margin-bottom: 0;
 }
 
 .profile-topbar__search-btn {
@@ -34,4 +29,15 @@
 
 .profile-topbar__search-btn {
     color: var(--primary-red);
+}
+
+@media (max-width: 1200px) {
+    .profile-topbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-topbar__buttons-wrapper {
+        margin-top: 24px;
+    }
 }

@@ -1,6 +1,7 @@
 .search-page {
-    max-width: 1120px;
+    max-width: 1150px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .search-page__head {
@@ -20,6 +21,7 @@
 }
 
 .search-page__description {
+    text-align: center;
     margin-bottom: 0;
     font-size: 14px;
     line-height: 14px;
@@ -111,4 +113,11 @@
 .dropdown-menu::-webkit-scrollbar-thumb {
     background-color: #c2c8de;
     border-radius: 2px;
+}
+
+@media (max-width: 1200px) {
+    .search-page__body .grid-block {
+        justify-content: center;
+        grid-template-columns: 325px 325px;
+    }
 }

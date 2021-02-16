@@ -110,3 +110,10 @@
 .profile-settings__info-items .link-item:hover {
     color: var(--primary-red);
 }
+
+@media (max-width: 1200px) {
+    .profile-settings__info-items {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 18px;
+    }
+}

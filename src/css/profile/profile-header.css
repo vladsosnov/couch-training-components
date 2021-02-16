@@ -48,3 +48,15 @@
 .list-item:hover {
     border-bottom: 2px solid var(--primary-red);
 }
+
+@media (max-width: 1200px) {
+    .profile-header__list {
+        margin-left: 0;
+        padding: 0 15px;
+    }
+    
+    .profile-header__title,
+    .list-item:not(:last-child) {
+        margin-right: 21px;
+    }
+}

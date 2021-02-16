@@ -1,6 +1,7 @@
 .profile-feedback {
-    max-width: 1120px;
+    max-width: 1150px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .profile-feedback__title {

@@ -29,6 +29,13 @@ body {
     color: var(--primary-ebony);
 }
 
+@media (max-width: 992px) {
+    .ct-title {
+        font-size: 24px;
+        line-height: 24px;
+    }
+}
+
 /* Buttons */
 
 .ct-button {
@@ -203,7 +210,7 @@ body {
   
 .autocomplete__input {
     width: 100%;
-    padding: 17px;
+    padding: 14px;
     border: 1px solid transparent;
     background-color:var(--primary-white);
     border-radius: 8px;
@@ -254,16 +261,88 @@ body {
     color: var(--primary-white) !important; 
 }
 
-.ct-component-wrapper {
-    padding: 50px !important;
+.autocomplete .img {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
 }
 
 .autocomplete .focus-visible {
     border-radius: 8px 8px 0 0;
 }
 
+
+/* and active class to autocomplete and than use it */
+/* .autocomplete .focus-visible .img {
+    filter: invert(23%) sepia(85%) saturate(5383%) hue-rotate(336deg) brightness(88%) contrast(94%);
+} */
+
 /* only for storybook */
 
 .ct-component-wrapper {
     padding: 50px !important;
 }
+
+/* value slider */
+.noUi-target {
+    left: 50%;
+    height: 136px !important;
+    transform: translateX(-50%);
+}
+
+.noUi-touch-area {
+    width: 40px !important;
+    height: 15px !important;
+    background: #C2C8DE;
+    border-radius: 4px;
+}
+
+.noUi-vertical .noUi-handle {
+    width: 40px !important;
+    height: 14px !important;
+    background: #C2C8DE;
+    right: -18px !important;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.noUi-vertical .noUi-origin .noUi-handle {
+    top: -3px;
+}
+
+.noUi-vertical .noUi-origin .noUi-handle-upper {
+    border-bottom: 1px solid var(--primary-red) !important;
+}
+
+.noUi-vertical .noUi-origin .noUi-handle-lower {
+    border-top: 1px solid var(--primary-red) !important;
+}
+
+.noUi-handle:before, .noUi-handle:after {
+    content: '' !important;
+    display: none  !important;
+}
+
+.noUi-vertical .noUi-origin .noUi-handle-lower::after {
+    content: '' !important;
+}
+
+.noUi-connect {
+    background: var(--primary-red) !important;
+}
+
+.noUi-handle {
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.noUi-handle:focus {
+    outline: none;
+}
+
+.noUi-base,
+.noUi-vertical {
+    width: 2px !important;
+}
+

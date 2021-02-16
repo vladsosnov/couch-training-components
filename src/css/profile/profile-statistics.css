@@ -27,3 +27,9 @@
     line-height: 18px;
     color: var(--primary-ebony);
 }
+
+@media (max-width: 1024px) {
+    .profile-statistics__title {
+        font-size: 42px;   
+    }
+}

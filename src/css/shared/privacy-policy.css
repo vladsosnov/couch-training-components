@@ -8,7 +8,7 @@
 }
 
 .privacy-policy__body {
-    padding: 64px 0;
+    padding: 64px 15px;
     display: flex;
     flex-direction: column;
     background: var(--primary-white);
