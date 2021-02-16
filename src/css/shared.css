@@ -172,8 +172,98 @@ body {
     filter: invert(23%) sepia(85%) saturate(5383%) hue-rotate(336deg) brightness(88%) contrast(94%);
 }
 
+.dropdown-menu,
+.autocomplete-items {
+    scrollbar-width: thin;
+    scrollbar-color:var(--primary-white);
+}
 
-/* TODO only for our storybook */
+.autocomplete-items::-webkit-scrollbar,
+.dropdown-menu::-webkit-scrollbar {
+    width: 4px;
+}
+
+.autocomplete-items::-webkit-scrollbar-track
+.dropdown-menu::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.autocomplete-items::-webkit-scrollbar-thumb,
+.dropdown-menu::-webkit-scrollbar-thumb {
+    background-color: #c2c8de;
+    border-radius: 2px;
+}
+
+/* autocomplete */
+.autocomplete {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+  }
+  
+.autocomplete__input {
+    width: 100%;
+    padding: 17px;
+    border: 1px solid transparent;
+    background-color:var(--primary-white);
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 14px;
+    color: var(--primary-ebony);
+}
+
+.autocomplete__input::placeholder {
+    font-size: 14px;
+    line-height: 14px;
+    color: var(--primary-ebony);
+}
+
+.autocomplete__input:focus {
+    outline: none;
+}
+
+.autocomplete-items {
+    position: absolute;
+    left: 0;
+    right: 0;
+    max-height: 220px;
+    border: none;
+    background: var(--primary-white);
+    box-shadow: 0px 15px 10px rgba(42, 47, 68, 0.1);
+    border-radius: 0px 0px 8px 8px;
+    overflow: auto;
+}
+
+.autocomplete-items div {
+    width: 100%;
+    padding: 17px;
+    background-color: #fff; 
+    border-top: 1px solid #d4d4d4; 
+    font-size: 14px;
+    line-height: 14px;
+    color: var(--primary-ebony);
+    cursor: pointer;
+}
+
+.autocomplete-items div:hover {
+    background-color: #f8f9fa;
+}
+
+.autocomplete-active {
+    background-color: DodgerBlue !important; 
+    color: var(--primary-white) !important; 
+}
+
+.ct-component-wrapper {
+    padding: 50px !important;
+}
+
+.autocomplete .focus-visible {
+    border-radius: 8px 8px 0 0;
+}
+
+/* only for storybook */
+
 .ct-component-wrapper {
     padding: 50px !important;
 }
