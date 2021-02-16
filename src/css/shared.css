@@ -135,6 +135,43 @@ body {
     margin-right: 10px;
 }
 
+/* Custom Select */
+.btn-group .profile-cabinet__select-status:focus {
+    outline: none;
+}
+
+.btn-group .flex-block {
+    display: flex;
+}
+
+.btn-group .user-status {
+    margin-right: 8px;
+}
+
+.btn-group .dropdown-toggle::after {
+    display: none !important;
+}
+
+.btn-group .dropdown-item {
+    border-top: 1px solid var(--light-gray);
+    padding: 18px;
+    font-size: 14px;
+    line-height: 14px;
+    color: var(--primary-ebony);
+}
+
+.btn-group .dropdown-item:last-child:hover {
+    border-radius: 0px 0px 8px 8px;
+}
+
+.btn-group.show .ct-button-reset {
+    border-radius: 8px 8px 0 0;
+}
+
+.btn-group.show .ct-button-reset .img {
+    filter: invert(23%) sepia(85%) saturate(5383%) hue-rotate(336deg) brightness(88%) contrast(94%);
+}
+
 
 /* TODO only for our storybook */
 .ct-component-wrapper {
