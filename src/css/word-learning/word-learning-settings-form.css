@@ -1,9 +1,19 @@
-.word-learning-settings-form {
-    max-width: 420px;
-    margin: 0 auto;
+.word-learning-settings-form.active {
     background: var(--primary-white);
     box-shadow: 0px 15px 10px rgba(42, 47, 68, 0.1);
     border-radius: 8px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.word-learning-settings-form {
+    position: absolute;
+    top: 48px;
+    right: 0;
+    max-width: 420px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
 }
 
 .word-learning-settings-form__controll-block {

@@ -1,7 +1,7 @@
 .profile-main {
-    max-width: 1150px;
+    max-width: 1120px;
+    width: 1120px;
     margin: 0 auto;
-    padding: 0 15px;
     background: var(--primary-white);
     box-shadow: 0px 3px 5px rgba(42, 47, 68, 0.1);
     border-radius: 8px;
@@ -50,7 +50,18 @@
 }
 
 .more-button {
+    width: 240px;
     cursor: pointer;
+}
+
+.more-button .svg {
+    position: absolute;
+    right: 0;
+}
+
+.profile-main__dropdown-menu .dropdown-item {
+    border-top: 0 !important;
+    border-bottom: 1px solid var(--light-gray);
 }
 
 .profile-main__user-raiting,
@@ -216,6 +227,16 @@
 
 .feedback-stars img:not(:last-child) {
     margin-right: 2px;
+}
+
+.profile-main .dropdown-menu {
+    width: 240px;
+    margin-top: 0;
+    padding: 0;
+    border: none;
+    background: var(--primary-white);
+    box-shadow: 0px 15px 10px rgba(42, 47, 68, 0.1);
+    border-radius: 0px 0px 8px 8px;
 }
 
 @media (max-width: 1140px) {

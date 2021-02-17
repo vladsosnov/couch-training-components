@@ -43,6 +43,37 @@ $('#showFilterToggle').on('click', function(e) {
     toggle.toggleClass('active');
 });
 
+$('#customizeWordSection').on('click', function(e) {
+    e.preventDefault();
+    const toggle = $(this).add('.word-learning-settings-form');
+    toggle.toggleClass('active');
+});
+
+// select
+
+$('.jRadioDropdown').change(function() {
+    var dropdown = $(this).closest('.dropdown');
+    var thislabel = $(this).closest('label');
+
+    dropdown.find('label').removeClass('active');
+    if( $(this).is(':checked') ) {
+        thislabel.addClass('active');
+        dropdown.find('ins').html( thislabel.text() );
+    }
+
+    });    
+
+    $('label.dropdown-item').each(function (index, value){
+    $(this).attr('tabindex', 0 );
+    $(this).find('input').attr('tabindex', -1 );
+    });
+
+    $('label.dropdown-item').keypress(function(e){
+    if((e.keyCode ? e.keyCode : e.which) == 13){
+        $(this).trigger('click');
+    }
+});
+
 var slider = document.getElementById('slider');
 
 noUiSlider.create(slider, {

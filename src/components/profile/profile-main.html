@@ -14,11 +14,35 @@
                 </svg>
                 Добавить в контакты
             </button>
-            <button class="more-button ct-reset-button">
-                <svg width="20" height="4" fill="none">
-                    <path d="M4 2a2 2 0 11-4 0 2 2 0 014 0z" fill="url(#paint0_linear)"/><path d="M12 2a2 2 0 11-4 0 2 2 0 014 0z" fill="url(#paint1_linear)"/><path d="M20 2a2 2 0 11-4 0 2 2 0 014 0z" fill="url(#paint2_linear)"/><defs><linearGradient id="paint0_linear" x1="20" y1="2" x2="0" y2="2" gradientUnits="userSpaceOnUse"><stop stop-color="#DC1B48"/><stop offset="1" stop-color="#FF756D"/></linearGradient><linearGradient id="paint1_linear" x1="20" y1="2" x2="0" y2="2" gradientUnits="userSpaceOnUse"><stop stop-color="#DC1B48"/><stop offset="1" stop-color="#FF756D"/></linearGradient><linearGradient id="paint2_linear" x1="20" y1="2" x2="0" y2="2" gradientUnits="userSpaceOnUse"><stop stop-color="#DC1B48"/><stop offset="1" stop-color="#FF756D"/></linearGradient></defs>
-                </svg>
-            </button>
+            <div class="btn-group">
+                <button type="button" class="more-button ct-reset-button dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <svg width="20" height="4" fill="none" class="svg">
+                        <path d="M4 2a2 2 0 11-4 0 2 2 0 014 0z" fill="url(#paint0_linear)"/><path d="M12 2a2 2 0 11-4 0 2 2 0 014 0z" fill="url(#paint1_linear)"/><path d="M20 2a2 2 0 11-4 0 2 2 0 014 0z" fill="url(#paint2_linear)"/><defs><linearGradient id="paint0_linear" x1="20" y1="2" x2="0" y2="2" gradientUnits="userSpaceOnUse"><stop stop-color="#DC1B48"/><stop offset="1" stop-color="#FF756D"/></linearGradient><linearGradient id="paint1_linear" x1="20" y1="2" x2="0" y2="2" gradientUnits="userSpaceOnUse"><stop stop-color="#DC1B48"/><stop offset="1" stop-color="#FF756D"/></linearGradient><linearGradient id="paint2_linear" x1="20" y1="2" x2="0" y2="2" gradientUnits="userSpaceOnUse"><stop stop-color="#DC1B48"/><stop offset="1" stop-color="#FF756D"/></linearGradient></defs>
+                    </svg>
+                </button>
+                <div class="profile-main__dropdown-menu dropdown-menu">
+                    <a class="dropdown-item" href="#">
+                        <div class="flex-block">
+                            Статистика видеозвонков
+                        </div>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <div class="flex-block">
+                            Пожаловаться
+                        </div>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <div class="flex-block">
+                            Заблокировать
+                        </div>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <div class="flex-block">
+                            Удалить из контактов
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
         <div class="profile-main__user-summary">
             <div class="user-info__summary-head">

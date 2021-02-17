@@ -216,6 +216,10 @@ module.exports = {
       template: path.resolve(__dirname, 'src/components/profile/profile-contacts.html'),
       filename: 'profile-contacts.html',
     }),
+    new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'src/components/profile/profile-fullcard.html'),
+      filename: 'profile-fullcard.html',
+    }),
   ],
   devtool: isProd ? false : 'source-map',
   module: {

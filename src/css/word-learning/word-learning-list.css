@@ -1,6 +1,7 @@
 .word-learning-list {
     max-width: 1120px;
     margin: 0 auto;
+    position: relative;
 }
 
 .word-learning-list__head {
@@ -19,12 +20,10 @@
 .buttons-group__link {
     display: flex;
     align-items: center;
-}
-
-.buttons-group__link {
     font-size: 14px;
     line-height: 14px;
     color: var(--primary-gray);
+    cursor: pointer;
 }
 
 .word-learning-list__body {
