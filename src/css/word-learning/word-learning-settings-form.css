@@ -28,7 +28,6 @@
 }
 
 .word-learning-settings-form__head {
-    margin-bottom: 18px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -198,4 +197,24 @@ input[type='checkbox']#checkbox_3:checked+label:before {
 
 .word-learning-settings-form__set-settings {
     padding: 24px;
+}
+
+/* dropdown */
+.nav-toggle.active .word-learning-settings-form__head button,
+.nav-toggle_2.active .word-learning-settings-form__head button {
+    transform: rotate(180deg);
+}
+
+.nav,
+.nav_2 {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.nav.active,
+.nav_2.active {
+    margin-top: 18px;
+    overflow: hidden;
+    max-height: 30em;
+    transition: max-height .2s ease-in;
 }

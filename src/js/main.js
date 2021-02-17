@@ -7,6 +7,18 @@ import '../css/main.css'
 import noUiSlider from 'nouislider';
 import 'nouislider/distribute/nouislider.css';
 
+$('.nav-toggle').on('click', function(e) {
+    e.preventDefault();
+    const toggle = $(this).add('.nav');
+    toggle.toggleClass('active');
+});
+
+$('.nav-toggle_2').on('click', function(e) {
+    e.preventDefault();
+    const toggle = $(this).add('.nav_2');
+    toggle.toggleClass('active');
+});
+
 var slider = document.getElementById('slider');
 
 noUiSlider.create(slider, {
@@ -20,4 +32,3 @@ noUiSlider.create(slider, {
     direction: 'rtl',
     orientation: 'vertical',
 });
-
