@@ -37,6 +37,12 @@ $('#dictionaryCloseIcon').on('click', function(e) {
     $('.dictionary').removeClass('active');
 });
 
+$('#showFilterToggle').on('click', function(e) {
+    e.preventDefault();
+    const toggle = $(this).add('.search-filter');
+    toggle.toggleClass('active');
+});
+
 var slider = document.getElementById('slider');
 
 noUiSlider.create(slider, {

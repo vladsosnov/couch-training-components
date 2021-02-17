@@ -1,10 +1,19 @@
-.search-filter {
+.search-filter.active {
     position: relative;
-    max-width: 960px;
     padding: 24px;
     background: var(--primary-white);
     box-shadow: 0px 15px 10px rgba(42, 47, 68, 0.1);
     border-radius: 8px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.search-filter {
+    max-width: 960px;
+    margin-left: auto;
+    margin-top: 16px;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .search-filter__block {
