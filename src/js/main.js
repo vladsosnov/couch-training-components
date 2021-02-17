@@ -80,6 +80,21 @@ $('#btnDelFromContacts').on('click', function(e) {
     toggle.toggleClass('active');
 });
 
+$(function(){
+    $('input[type=file]').each(function() {
+      var $input = $(this),
+          $label = $input.next('.js-labelFile'),
+          labelVal = $label.html();
+
+      $input.hide();
+      $input.on('change', function(element) {
+          var fileName = '';
+          if (element.target.value) fileName = element.target.value.split('\\').pop();
+          fileName ? $label.addClass('has-file').find('.js-fileName').html(fileName) : $label.removeClass('has-file').html(labelVal);
+      });
+    });
+});
+
 var slider = document.getElementById('slider');
 
 noUiSlider.create(slider, {

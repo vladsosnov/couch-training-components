@@ -56,8 +56,20 @@
     max-width: 96px;
 }
 
-.verification-step__del-wrapper button {
+.verification-step__del-wrapper button,
+.verification-step__file-button input {
     margin-right: 16px;
+}
+
+label {
+   cursor: pointer;
+   /* Style as you please, it will become the visible UI component. */
+}
+
+#upload-photo {
+   opacity: 0;
+   position: absolute;
+   z-index: -1;
 }
 
 .verification-step__del-wrapper span {
