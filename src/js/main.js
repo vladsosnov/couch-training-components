@@ -19,6 +19,12 @@ $('.nav-toggle_2').on('click', function(e) {
     toggle.toggleClass('active');
 });
 
+$('#changeAvatar').on('click', function(e) {
+    e.preventDefault();
+    const toggle = $(this).add('.change-avatar-buttons');
+    toggle.toggleClass('active');
+});
+
 var slider = document.getElementById('slider');
 
 noUiSlider.create(slider, {
