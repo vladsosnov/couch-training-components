@@ -52,8 +52,8 @@ $('#customizeWordSection').on('click', function(e) {
 // select
 
 $('.jRadioDropdown').change(function() {
-    var dropdown = $(this).closest('.dropdown');
-    var thislabel = $(this).closest('label');
+    const dropdown = $(this).closest('.dropdown');
+    const thislabel = $(this).closest('label');
 
     dropdown.find('label').removeClass('active');
     if( $(this).is(':checked') ) {
@@ -64,14 +64,20 @@ $('.jRadioDropdown').change(function() {
     });    
 
     $('label.dropdown-item').each(function (index, value){
-    $(this).attr('tabindex', 0 );
-    $(this).find('input').attr('tabindex', -1 );
+        $(this).attr('tabindex', 0 );
+        $(this).find('input').attr('tabindex', -1 );
     });
 
     $('label.dropdown-item').keypress(function(e){
-    if((e.keyCode ? e.keyCode : e.which) == 13){
+        if((e.keyCode ? e.keyCode : e.which) == 13){
         $(this).trigger('click');
     }
+});
+
+$('#btnDelFromContacts').on('click', function(e) {
+    e.preventDefault();
+    const toggle = $(this).add('.search-filter');
+    toggle.toggleClass('active');
 });
 
 var slider = document.getElementById('slider');
