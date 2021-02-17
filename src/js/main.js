@@ -25,6 +25,18 @@ $('#changeAvatar').on('click', function(e) {
     toggle.toggleClass('active');
 });
 
+$('#dictionaryCTA').on('click', function(e) {
+    e.preventDefault();
+    const toggle = $(this).add('.dictionary');
+    toggle.toggleClass('active');
+});
+
+$('#dictionaryCloseIcon').on('click', function(e) {
+    e.preventDefault();
+    $('#dictionaryCTA').removeClass('active');
+    $('.dictionary').removeClass('active');
+});
+
 var slider = document.getElementById('slider');
 
 noUiSlider.create(slider, {
