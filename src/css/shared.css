@@ -9,6 +9,8 @@
     --primary-ebony: #2a2f44;
 
     --secondary-gray: #6e7388;
+
+    --invert-to-red: invert(23%) sepia(85%) saturate(5383%) hue-rotate(336deg) brightness(88%) contrast(94%);
 }
 
 /* before creating components */
@@ -191,7 +193,7 @@ body {
 }
 
 .btn-group.show .ct-button-reset .img {
-    filter: invert(23%) sepia(85%) saturate(5383%) hue-rotate(336deg) brightness(88%) contrast(94%);
+    filter: var(--invert-to-red);
 }
 
 .dropdown-menu,
@@ -290,7 +292,7 @@ body {
 
 /* and active class to autocomplete and than use it */
 /* .autocomplete .focus-visible .img {
-    filter: invert(23%) sepia(85%) saturate(5383%) hue-rotate(336deg) brightness(88%) contrast(94%);
+    filter: var(--invert-to-red);
 } */
 
 /* only for storybook */
@@ -362,24 +364,28 @@ body {
 }
 
 /* custom select */
-.profile-settings .dropdown-menu.radio .dropdown-item { 
+.profile-settings .dropdown-menu.radio .dropdown-item,
+.profile-cabinet .dropdown-menu.radio .dropdown-item { 
 	position: relative;
 	overflow: hidden; 
     cursor: pointer;
 }
 
-.profile-settings .dropdown-menu.radio input { 
+.profile-settings .dropdown-menu.radio input,
+.profile-cabinet .dropdown-menu.radio input { 
 	visibility: hidden; 
     position:absolute; left: -30px;
 }
 
-.profile-settings .dropdown-menu.radio i { 
+.profile-settings .dropdown-menu.radio i,
+.profile-cabinet .dropdown-menu.radio i { 
     font-weight: normal;
     font-style: normal; 
     display: block;
 }
 
-.profile-settings .ct-reset-button .ins {
+.profile-settings .ct-reset-button .ins,
+.profile-cabinet .ct-reset-button .ins {
     cursor: pointer;
     text-decoration: none;
     font-weight: 600;
@@ -388,11 +394,13 @@ body {
     color: var(--primary-ebony);
 }
 
-.profile-settings .dropdown-toggle::after {
+.profile-settings .dropdown-toggle::after,
+.profile-cabinet .dropdown-toggle::after {
     display: none !important;
 }
 
-.profile-settings .dropdown-menu {
+.profile-settings .dropdown-menu,
+.profile-cabinet .dropdown-menu {
     margin-top: 8px;
     padding: 0;
     background: var(--primary-white);
@@ -400,7 +408,8 @@ body {
     border-radius: 8px;
 }
 
-.profile-settings .dropdown-item {
+.profile-settings .dropdown-item,
+.profile-cabinet .dropdown-item {
     margin: 0;
     padding: 16px;
     font-size: 14px;

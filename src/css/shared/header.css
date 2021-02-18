@@ -62,7 +62,7 @@
 
 .ct-header .nav-list__item:hover .img,
 .ct-header .nav-list__item--active .img {
-    filter: invert(23%) sepia(85%) saturate(5383%) hue-rotate(336deg) brightness(88%) contrast(94%);
+    filter: var(--invert-to-red);
 }
 
 .ct-header .link {

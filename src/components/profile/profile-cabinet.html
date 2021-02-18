@@ -10,31 +10,39 @@
         <div class="profile-cabinet__head">
             <div class="profile-cabinet__user-status">
                 <p class="capture">Как меня видят:</p>
-                <div class="btn-group">
-                    <button type="button" class="ct-button-reset profile-cabinet__select-status dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <div class="flex-block">
-                            <div class="user-status user-status--ofline"></div>
-                            Оффлайн
-                        </div>
+                <div class="dropdown">
+                    <button type="button" class="ct-reset-button dropdown-toggle" data-toggle="dropdown">
+                        <ins class="ins">
+                            <div class="flex-block">
+                                <div class="user-status user-status--ofline"></div>
+                                Оффлайн
+                            </div>
+                        </ins>
                         <svg width="10" height="10" fill="none" class="img">
                             <path d="M2 1a1 1 0 11-2 0 1 1 0 012 0zM6 1a1 1 0 11-2 0 1 1 0 012 0zM10 1a1 1 0 11-2 0 1 1 0 012 0zM2 5a1 1 0 11-2 0 1 1 0 012 0zM6 5a1 1 0 11-2 0 1 1 0 012 0zM10 5a1 1 0 11-2 0 1 1 0 012 0zM2 9a1 1 0 11-2 0 1 1 0 012 0zM6 9a1 1 0 11-2 0 1 1 0 012 0zM10 9a1 1 0 11-2 0 1 1 0 012 0z" fill="#C2C8DE"/>
                         </svg>
                     </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">
-                            <div class="flex-block">
-                                <div class="user-status user-status--online"></div>
-                                Онлайн
-                            </div>
-                        </a>
-                        <a class="dropdown-item" href="#">
-                            <div class="flex-block">
-                                <div class="user-status user-status--busy"></div>
-                                Занят
-                            </div>
-                        </a>
+                    <div class="dropdown-menu radio">
+                        <label class="dropdown-item">
+                            <input class="jRadioDropdown" type="radio" value="001" name="alphabet">
+                            <i>
+                                <div class="flex-block">
+                                    <div class="user-status user-status--online"></div>
+                                    Онлайн
+                                </div>
+                            </i>
+                        </label>
+                        <label class="dropdown-item">
+                            <input class="jRadioDropdown" type="radio" value="001" name="alphabet">
+                            <i>
+                                <div class="flex-block">
+                                    <div class="user-status user-status--busy"></div>
+                                    Занят
+                                </div>
+                            </i>
+                        </label>
                     </div>
-                  </div>
+                </div>
             </div>
             <div class="profile-cabinet__user-main-info">
                 <div class="profile-cabinet__user-avatar">
