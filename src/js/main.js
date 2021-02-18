@@ -99,6 +99,26 @@ $(function(){
     });
 });
 
+// checkboxes in setting page
+function toggleText(id, checkboxId) {
+    $(checkboxId).toggleClass('checked-item');
+    const x = document.getElementById(id);
+
+    x.innerHTML === 'Отключено' ? x.innerHTML = 'Включено' : x.innerHTML = 'Отключено'
+}
+
+$('#checkbox_1[type="checkbox"]').click(function() {
+    toggleText('item_1-status', '#item_1')
+});
+
+$('#checkbox_2[type="checkbox"]').click(function() {
+    toggleText('item_2-status', '#item_2')
+});
+
+$('#checkbox_3[type="checkbox"]').click(function() {
+    toggleText('item_3-status', '#item_3')
+});
+
 var slider = document.getElementById('slider');
 
 noUiSlider.create(slider, {

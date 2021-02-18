@@ -90,8 +90,7 @@
     color: var(--primary-ebony);
 }
 
-.profile-settings__text--unchecked,
-.profile-settings__status--unchecked {
+.profile-settings__item.checked-item .profile-settings__text {
     font-weight: 400;
     color: var(--secondary-gray);
 }
@@ -131,6 +130,14 @@
     grid-template-columns: 240px 240px;
     grid-gap: 24px;
     justify-content: flex-end;
+}
+
+.profile-settings .dropdown .img {
+    margin-left: 18px;
+}
+
+.profile-settings .dropdown.show .img {
+    filter: var(--invert-to-red);
 }
 
 @media (max-width: 1200px) {
