@@ -217,14 +217,14 @@ input[type='checkbox']#checkbox_3:checked+label:before {
 
 .nav,
 .nav_2 {
-    max-height: 0;
-    overflow: hidden;
-}
-
-.nav.active,
-.nav_2.active {
     margin-top: 18px;
     overflow: hidden;
     max-height: 30em;
     transition: max-height .2s ease-in;
+}
+
+.nav.active,
+.nav_2.active {
+    max-height: 0;
+    overflow: hidden;
 }

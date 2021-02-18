@@ -7,28 +7,34 @@ import '../css/main.css'
 import noUiSlider from 'nouislider';
 import 'nouislider/distribute/nouislider.css';
 
-$('.nav-toggle').on('click', function(e) {
+function toggleActiveClass(item, toClass, e) {
     e.preventDefault();
-    const toggle = $(this).add('.nav');
+    const toggle = $(item).add(toClass);
     toggle.toggleClass('active');
+}
+
+$('.nav-toggle').on('click', function(e) {
+    toggleActiveClass(this, '.nav', e)
 });
 
 $('.nav-toggle_2').on('click', function(e) {
-    e.preventDefault();
-    const toggle = $(this).add('.nav_2');
-    toggle.toggleClass('active');
+    toggleActiveClass(this, '.nav_2', e)
 });
 
 $('#changeAvatar').on('click', function(e) {
-    e.preventDefault();
-    const toggle = $(this).add('.change-avatar-buttons');
-    toggle.toggleClass('active');
+    toggleActiveClass(this, '.change-avatar-buttons', e)
 });
 
 $('#dictionaryCTA').on('click', function(e) {
-    e.preventDefault();
-    const toggle = $(this).add('.dictionary');
-    toggle.toggleClass('active');
+    toggleActiveClass(this, '.dictionary', e)
+});
+
+$('#showFilterToggle').on('click', function(e) {
+    toggleActiveClass(this, '.search-filter', e)
+});
+
+$('#customizeWordSection').on('click', function(e) {
+    toggleActiveClass(this, '.word-learning-settings-form', e)
 });
 
 $('#dictionaryCloseIcon').on('click', function(e) {
@@ -37,20 +43,7 @@ $('#dictionaryCloseIcon').on('click', function(e) {
     $('.dictionary').removeClass('active');
 });
 
-$('#showFilterToggle').on('click', function(e) {
-    e.preventDefault();
-    const toggle = $(this).add('.search-filter');
-    toggle.toggleClass('active');
-});
-
-$('#customizeWordSection').on('click', function(e) {
-    e.preventDefault();
-    const toggle = $(this).add('.word-learning-settings-form');
-    toggle.toggleClass('active');
-});
-
-// select
-
+// custom select
 $('.jRadioDropdown').change(function() {
     const dropdown = $(this).closest('.dropdown');
     const thislabel = $(this).closest('label');
@@ -63,15 +56,15 @@ $('.jRadioDropdown').change(function() {
         pcUserStatus.removeClass().addClass(`user-status user-status--${thislabel.data('user-class')}`);
     }
 
-    });    
+});
 
-    $('label.dropdown-item').each(function (index, value){
-        $(this).attr('tabindex', 0 );
-        $(this).find('input').attr('tabindex', -1 );
-    });
+$('label.dropdown-item').each(function (index, value){
+    $(this).attr('tabindex', 0 );
+    $(this).find('input').attr('tabindex', -1 );
+});
 
-    $('label.dropdown-item').keypress(function(e){
-        if((e.keyCode ? e.keyCode : e.which) == 13){
+$('label.dropdown-item').keypress(function(e){
+    if((e.keyCode ? e.keyCode : e.which) == 13){
         $(this).trigger('click');
     }
 });
@@ -120,15 +113,16 @@ $('#checkbox_3[type="checkbox"]').click(function() {
 });
 
 var slider = document.getElementById('slider');
-
-noUiSlider.create(slider, {
-    start: [20, 80],
-    connect: true,
-    range: {
-        'min': 0,
-        'max': 100
-    },
-    tooltips: true,
-    direction: 'rtl',
-    orientation: 'vertical',
-});
+if (slider) {
+    noUiSlider.create(slider, {
+        start: [20, 80],
+        connect: true,
+        range: {
+            'min': 0,
+            'max': 100
+        },
+        tooltips: true,
+        direction: 'rtl',
+        orientation: 'vertical',
+    });
+}

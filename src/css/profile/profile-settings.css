@@ -90,7 +90,8 @@
     color: var(--primary-ebony);
 }
 
-.profile-settings__item.checked-item .profile-settings__text {
+.profile-settings__item.checked-item .profile-settings__text,
+.profile-settings__item.checked-item .profile-settings__status {
     font-weight: 400;
     color: var(--secondary-gray);
 }
