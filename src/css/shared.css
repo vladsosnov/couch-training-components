@@ -417,3 +417,17 @@ body {
     color: var(--primary-ebony);
     outline: none;
 }
+
+/* uploaded file name */
+.js-labelFile {
+    display: flex;
+    align-items: center;
+}
+
+.js-fileName {
+    margin-left: 14px;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 12px;
+    color: var(--primary-red);
+}

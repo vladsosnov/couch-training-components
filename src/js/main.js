@@ -82,6 +82,8 @@ $('#btnDelFromContacts').on('click', function(e) {
     toggle.toggleClass('active');
 });
 
+
+// upload file
 $(function(){
     $('input[type=file]').each(function() {
       var $input = $(this),
