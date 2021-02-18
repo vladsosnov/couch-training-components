@@ -189,7 +189,7 @@
 }
 
 .profile-cabinet .dropdown-item {
-    border-top: 1px solid #DBDFF0;
+    border-top: 1px solid var(--light-gray);
 }
 
 @media (max-width: 992px) {

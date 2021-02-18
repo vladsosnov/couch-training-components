@@ -190,6 +190,33 @@ $(function(){
 }); 
 
 
+// custom-modals
+function toggleModals(slug) {
+    $(`.custom-modal--${slug}`).removeClass('ct-hidden')
+
+    const customModal = $(`.custom-modal--${slug}`);
+
+    if (customModal.data('clossable')) {
+        $('.close-icon').removeClass('ct-hidden')
+    
+        $('.close-icon').on('click', function() {
+            customModal.addClass('ct-hidden')
+        });
+    }
+};
+
+$('#wordAdding').on('click', function() {
+    toggleModals('word-adding');
+});
+
+$('#languageList').on('click', function() {
+    toggleModals('language-list');
+});
+
+$('#wordAddingFull').on('click', function() {
+    toggleModals('word-adding-full');
+});
+
 var slider = document.getElementById('slider');
 if (slider) {
     noUiSlider.create(slider, {
