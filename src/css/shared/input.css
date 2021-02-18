@@ -1,0 +1,42 @@
+.custom-input {
+    position: relative;
+    max-width: 320px;
+}
+
+.custom-input .input {
+    width: 100%;
+    margin: 0;
+    padding: 10px 16px;
+    border: none;
+    font-size: 12px;
+    line-height: 12px;
+    color: var(--secondary-gray);
+}
+
+.custom-input .input::placeholder {
+    font-size: 12px;
+    line-height: 12px;
+    color: var(--secondary-gray);
+}
+
+.custom-input .input--with-value {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+    color: var(--primary-ebony);
+}
+
+.custom-input .input:focus {
+    outline: none;
+}
+
+.custom-input button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.custom-input .apply-mark-icon {
+    right: 28px;
+}

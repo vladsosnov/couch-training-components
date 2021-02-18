@@ -137,6 +137,59 @@ $('#startLearning').click(function() {
     `
 })
 
+// custom-input
+$(function(){
+    const customInput = $('#cInput');
+    const inputCurrentValue = $("#cInput").val();
+
+    const editMarkButton = $('#editMark');
+    const editMarkIcon = $('#editMarkIcon');
+
+    const addMarkButton = $('#addMark');
+    const addMarkIcon = $('#addMarkIcon');
+
+    const cancelMarkButton = $('#cancelMark');
+    const cancelMarkIcon = $('#cancelMarkIcon');
+
+    const applyMarkButton = $('#applyMark');
+    const applyMarkIcon = $('#applyMarkIcon');
+
+    if (inputCurrentValue) {
+        editMarkIcon.removeClass('ct-hidden')
+        customInput.addClass('input--with-value')
+    }
+
+    if (!inputCurrentValue) {
+        addMarkIcon.removeClass('ct-hidden')
+    }
+
+    editMarkButton.on('click', function() {
+        alert('change mark')
+    });
+
+    cancelMarkButton.on('click', function() {
+        alert('cancel editing')
+    });
+
+    addMarkButton.on('click', function() {
+        alert('push to database')
+    });
+
+    applyMarkButton.on('click', function() {
+        alert('push updated velue in database')
+    });
+
+    customInput.on('input', function() {
+        editMarkIcon.addClass('ct-hidden')
+        addMarkIcon.addClass('ct-hidden')
+
+        customInput.removeClass('input--with-value')
+        applyMarkIcon.removeClass('ct-hidden')
+        cancelMarkIcon.removeClass('ct-hidden')
+    });
+}); 
+
+
 var slider = document.getElementById('slider');
 if (slider) {
     noUiSlider.create(slider, {

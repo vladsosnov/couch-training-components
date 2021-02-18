@@ -7,6 +7,7 @@
 @import './shared/user-card.css';
 @import './shared/header.css'; 
 @import './shared/privacy-policy.css';
+@import './shared/input.css';
 
 @import './profile/profile-topbar.css';
 @import './profile/profile-main.css';

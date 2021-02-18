@@ -132,6 +132,10 @@ module.exports = {
       template: path.resolve(__dirname, 'src/components/shared/privacy-policy.html'),
       filename: 'privacy-policy.html',
     }),
+    new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'src/components/shared/input.html'),
+      filename: 'input.html',
+    }),
 
     new HTMLWebpackPlugin({
       template: path.resolve(__dirname, 'src/components/search/search-filter.html'),
