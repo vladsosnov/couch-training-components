@@ -431,3 +431,7 @@ body {
     line-height: 12px;
     color: var(--primary-red);
 }
+
+.ct-hidden {
+    display: none;
+}

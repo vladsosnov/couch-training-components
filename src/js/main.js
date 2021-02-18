@@ -112,6 +112,31 @@ $('#checkbox_3[type="checkbox"]').click(function() {
     toggleText('item_3-status', '#item_3')
 });
 
+// start learning button
+$('#startLearning').click(function() {
+    const buttonItem = document.getElementById('startLearning');
+
+    if ($(this).hasClass('ct-button--success')) {
+        $(this).removeClass().addClass('ct-button ct-button--danger');
+        buttonItem.innerHTML = `
+            <svg width="8" height="14" fill="none" id="stop-icon" class="ct-button__icon--left">
+                <path d="M0 0h2v14H0V0zM6 0h2v14H6V0z" fill="#fff"/>
+            </svg>
+            Остановить
+        `
+
+        return
+    }
+
+    $(this).removeClass().addClass('ct-button ct-button--success');
+    buttonItem.innerHTML = `
+        <svg width="8" height="14" fill="none" id="start-icon" class="ct-button__icon--left start-icon">
+            <path d="M8 7L0 0v14l8-7z" fill="#fff"/>
+        </svg>
+        Начать обучение
+    `
+})
+
 var slider = document.getElementById('slider');
 if (slider) {
     noUiSlider.create(slider, {
