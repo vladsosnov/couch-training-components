@@ -12,9 +12,9 @@
                 <p class="capture">Как меня видят:</p>
                 <div class="dropdown">
                     <button type="button" class="ct-reset-button dropdown-toggle" data-toggle="dropdown">
+                        <div class="user-status user-status--ofline" id="pcUserStatus"></div>
                         <ins class="ins">
                             <div class="flex-block">
-                                <div class="user-status user-status--ofline"></div>
                                 Оффлайн
                             </div>
                         </ins>
@@ -23,8 +23,8 @@
                         </svg>
                     </button>
                     <div class="dropdown-menu radio">
-                        <label class="dropdown-item">
-                            <input class="jRadioDropdown" type="radio" value="001" name="alphabet">
+                        <label class="dropdown-item" data-user-class="online">
+                            <input class="jRadioDropdown" type="radio" value="001" name="status">
                             <i>
                                 <div class="flex-block">
                                     <div class="user-status user-status--online"></div>
@@ -32,8 +32,17 @@
                                 </div>
                             </i>
                         </label>
-                        <label class="dropdown-item">
-                            <input class="jRadioDropdown" type="radio" value="001" name="alphabet">
+                        <label class="dropdown-item" data-user-class="ofline">
+                            <input class="jRadioDropdown" type="radio" value="002" name="status">
+                            <i>
+                                <div class="flex-block">
+                                    <div class="user-status user-status--ofline"></div>
+                                    Оффлайн
+                                </div>
+                            </i>
+                        </label>
+                        <label class="dropdown-item" data-user-class="busy">
+                            <input class="jRadioDropdown" type="radio" value="003" name="status">
                             <i>
                                 <div class="flex-block">
                                     <div class="user-status user-status--busy"></div>

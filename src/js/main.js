@@ -54,11 +54,13 @@ $('#customizeWordSection').on('click', function(e) {
 $('.jRadioDropdown').change(function() {
     const dropdown = $(this).closest('.dropdown');
     const thislabel = $(this).closest('label');
+    const pcUserStatus = $('#pcUserStatus')
 
     dropdown.find('label').removeClass('active');
     if( $(this).is(':checked') ) {
         thislabel.addClass('active');
         dropdown.find('ins').html( thislabel.text() );
+        pcUserStatus.removeClass().addClass(`user-status user-status--${thislabel.data('user-class')}`);
     }
 
     });    
