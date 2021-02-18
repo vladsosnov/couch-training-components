@@ -192,9 +192,9 @@ $(function(){
 
 // custom-modals
 function toggleModals(slug) {
-    $(`.custom-modal--${slug}`).removeClass('ct-hidden')
-
     const customModal = $(`.custom-modal--${slug}`);
+
+    customModal.removeClass('ct-hidden')
 
     if (customModal.data('clossable')) {
         $('.close-icon').removeClass('ct-hidden')
@@ -203,6 +203,10 @@ function toggleModals(slug) {
             customModal.addClass('ct-hidden')
         });
     }
+
+    $('#cancelBlockUser').on('click', function() {
+        customModal.addClass('ct-hidden')
+    });
 };
 
 $('#wordAdding').on('click', function() {
@@ -216,6 +220,15 @@ $('#languageList').on('click', function() {
 $('#wordAddingFull').on('click', function() {
     toggleModals('word-adding-full');
 });
+
+$('#blockUser').on('click', function() {
+    toggleModals('block-user');
+});
+
+$('#feedbackToUser').on('click', function() {
+    toggleModals('feedback-to-user');
+});
+
 
 var slider = document.getElementById('slider');
 if (slider) {

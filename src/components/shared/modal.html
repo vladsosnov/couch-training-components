@@ -10,9 +10,9 @@
         <button class="ct-button ct-button--primary" id="wordAdding">Modal 1</button>
         <button class="ct-button ct-button--primary" id="wordAddingFull">Modal 2</button>
         <button class="ct-button ct-button--primary" id="languageList">Modal 3</button>
-        <button class="ct-button ct-button--primary" id="">Modal 3</button>
-        <button class="ct-button ct-button--primary" id="">Modal 4</button>
-        <button class="ct-button ct-button--primary" id="">Modal 5</button>
+        <button class="ct-button ct-button--primary" id="blockUser">Modal 4</button>
+        <button class="ct-button ct-button--primary" id="feedbackToUser">Modal 5</button>
+        <button class="ct-button ct-button--primary" id="">Modal 6</button>
     </div>
 
     <!-- modal 1 -->
@@ -187,6 +187,87 @@
             <div class="custom-modal__footer">
                 <button class="ct-button ct-button--primary">
                     Подтвердить список языков (2)
+                </button>
+            </div>
+
+            <svg width="14" height="14" fill="none" id="closeModalIcon" class="close-icon ct-hidden">
+                <path d="M13.707 12.293a1 1 0 11-1.414 1.414L7 8.414l-5.293 5.293a.997.997 0 01-1.414 0 1 1 0 010-1.414L5.586 7 .293 1.707A1 1 0 111.707.293L7 5.586 12.293.293a1 1 0 111.414 1.414L8.414 7l5.293 5.293z" fill="#2A2F44"/>
+            </svg>
+        </div>
+    </div>
+
+    <!-- modal 4 -->
+    
+    <div class="custom-modal custom-modal--block-user ct-hidden ct-overlay" data-clossable="false">
+        <div class="custom-modal__content">
+
+            <h3 class="custom-modal__head">
+                <img src="../../img/shared/avatar2@x.png" alt="avatar" class="avatar">
+                <p>Вы точно хотите заблокировать</p>
+                пользователя Инна Павленко?
+            </h3>
+
+            <div class="custom-modal__body">
+                <button class="ct-button ct-button--primary">
+                    <svg width="16" height="20" fill="none" class="ct-button__icon--left">
+                        <path d="M15 8h-1V6A6 6 0 002 6v2H1a1 1 0 00-1 1v10a1 1 0 001 1h14a1 1 0 001-1V9a1 1 0 00-1-1zM4 6a4 4 0 018 0v2H4V6zm10 12H2v-8h12v8z" fill="#fff"/>
+                    </svg>
+                    Да, заблокировать
+                </button>
+            </div>
+
+            <div class="custom-modal__footer">
+                <button class="ct-reset-button" id="cancelBlockUser">
+                    Нет, не блокировать
+                </button>
+            </div>
+
+            <svg width="14" height="14" fill="none" id="closeModalIcon" class="close-icon ct-hidden">
+                <path d="M13.707 12.293a1 1 0 11-1.414 1.414L7 8.414l-5.293 5.293a.997.997 0 01-1.414 0 1 1 0 010-1.414L5.586 7 .293 1.707A1 1 0 111.707.293L7 5.586 12.293.293a1 1 0 111.414 1.414L8.414 7l5.293 5.293z" fill="#2A2F44"/>
+            </svg>
+        </div>
+    </div>
+
+    <!-- modal 5 -->
+    
+    <div class="custom-modal custom-modal--feedback-to-user ct-hidden ct-overlay" data-clossable="true">
+        <div class="custom-modal__content">
+
+            <h3 class="custom-modal__head">
+                <img src="../../img/shared/avatar2@x.png" alt="avatar" class="avatar">
+                <div>
+                    <b>Отзыв</b> пользователю <br>
+                </div>
+                Инна Павленко?
+            </h3>
+
+            <div class="custom-modal__body">
+                <textarea
+                    placeholder="Текст вашего отзыва..."
+                    class="textarea"
+                ></textarea>
+            </div>
+
+            <div class="custom-modal__footer">
+                <div class="feedback-rait">
+                    <svg width="30" height="30" fill="none">
+                        <path d="M30 11.46L19.64 9.88 15 0l-4.64 9.88L0 11.46l7.5 7.69L5.73 30 15 24.88 24.27 30 22.5 19.15l7.5-7.7zM15.97 23.13l-.97-.54-.97.54-5.66 3.13 1.1-6.8.17-.99-.7-.72-4.79-4.9 6.52-1 1.05-.16.46-.96L15 4.7l2.82 6.02.46.96 1.05.16 6.52 1-4.78 4.9-.7.72.16 1 1.1 6.79-5.66-3.13zM19 15.06l-2 2.05.47 2.89L15 18.63 12.53 20l.47-2.9-2-2.04 2.76-.43L15 12l1.24 2.63 2.76.43z" fill="url(#paint0_linear)"/><defs><linearGradient id="paint0_linear" x1="30" y1="15" x2="0" y2="15" gradientUnits="userSpaceOnUse"><stop stop-color="#DC1B48"/><stop offset="1" stop-color="#FF756D"/></linearGradient></defs>
+                    </svg>
+                    <svg width="30" height="30" fill="none">
+                        <path d="M30 11.46L19.64 9.88 15 0l-4.64 9.88L0 11.46l7.5 7.69L5.73 30 15 24.88 24.27 30 22.5 19.15l7.5-7.7zM15.97 23.13l-.97-.54-.97.54-5.66 3.13 1.1-6.8.17-.99-.7-.72-4.79-4.9 6.52-1 1.05-.16.46-.96L15 4.7l2.82 6.02.46.96 1.05.16 6.52 1-4.78 4.9-.7.72.16 1 1.1 6.79-5.66-3.13zM19 15.06l-2 2.05.47 2.89L15 18.63 12.53 20l.47-2.9-2-2.04 2.76-.43L15 12l1.24 2.63 2.76.43z" fill="url(#paint0_linear)"/><defs><linearGradient id="paint0_linear" x1="30" y1="15" x2="0" y2="15" gradientUnits="userSpaceOnUse"><stop stop-color="#DC1B48"/><stop offset="1" stop-color="#FF756D"/></linearGradient></defs>
+                    </svg>
+                    <svg width="30" height="30" fill="none">
+                        <path d="M30 11.46L19.64 9.88 15 0l-4.64 9.88L0 11.46l7.5 7.69L5.73 30 15 24.88 24.27 30 22.5 19.15l7.5-7.7zM15.97 23.13l-.97-.54-.97.54-5.66 3.13 1.1-6.8.17-.99-.7-.72-4.79-4.9 6.52-1 1.05-.16.46-.96L15 4.7l2.82 6.02.46.96 1.05.16 6.52 1-4.78 4.9-.7.72.16 1 1.1 6.79-5.66-3.13zM19 15.06l-2 2.05.47 2.89L15 18.63 12.53 20l.47-2.9-2-2.04 2.76-.43L15 12l1.24 2.63 2.76.43z" fill="url(#paint0_linear)"/><defs><linearGradient id="paint0_linear" x1="30" y1="15" x2="0" y2="15" gradientUnits="userSpaceOnUse"><stop stop-color="#DC1B48"/><stop offset="1" stop-color="#FF756D"/></linearGradient></defs>
+                    </svg>
+                    <svg width="30" height="30" fill="none">
+                        <path d="M30 11.46L19.64 9.88 15 0l-4.64 9.88L0 11.46l7.5 7.69L5.73 30 15 24.88 24.27 30 22.5 19.15l7.5-7.7zM15.97 23.13l-.97-.54-.97.54-5.66 3.13 1.1-6.8.17-.99-.7-.72-4.79-4.9 6.52-1 1.05-.16.46-.96L15 4.7l2.82 6.02.46.96 1.05.16 6.52 1-4.78 4.9-.7.72.16 1 1.1 6.79-5.66-3.13zM19 15.06l-2 2.05.47 2.89L15 18.63 12.53 20l.47-2.9-2-2.04 2.76-.43L15 12l1.24 2.63 2.76.43z" fill="url(#paint0_linear)"/><defs><linearGradient id="paint0_linear" x1="30" y1="15" x2="0" y2="15" gradientUnits="userSpaceOnUse"><stop stop-color="#DC1B48"/><stop offset="1" stop-color="#FF756D"/></linearGradient></defs>
+                    </svg>
+                    <svg width="30" height="30" fill="none">
+                        <path d="M30 11.46L19.64 9.88 15 0l-4.64 9.88L0 11.46l7.5 7.69L5.73 30 15 24.88 24.27 30 22.5 19.15l7.5-7.7zM15.97 23.13l-.97-.54-.97.54-5.66 3.13 1.1-6.8.17-.99-.7-.72-4.79-4.9 6.52-1 1.05-.16.46-.96L15 4.7l2.82 6.02.46.96 1.05.16 6.52 1-4.78 4.9-.7.72.16 1 1.1 6.79-5.66-3.13zM19 15.06l-2 2.05.47 2.89L15 18.63 12.53 20l.47-2.9-2-2.04 2.76-.43L15 12l1.24 2.63 2.76.43z" fill="#C2C8DE"/>
+                    </svg>
+                </div>
+                <button class="ct-button ct-button--primary">
+                    Отправить
                 </button>
             </div>
 

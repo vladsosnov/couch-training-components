@@ -151,6 +151,71 @@
     cursor: pointer;
 }
 
+.custom-modal--block-user .custom-modal__head .avatar,
+.custom-modal--feedback-to-user .custom-modal__head .avatar {
+    max-width: 96px;
+    margin-bottom: 16px;
+    padding: 3px;
+    border: 1px solid #c2c8de;
+    border-radius: 50%;
+}
+
+.custom-modal--block-user .custom-modal__body button {
+    max-width: 240px;
+    margin: 0 auto;
+}
+
+.custom-modal--block-user .custom-modal__footer button {
+    width: 100%;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 12px;
+    text-align: center;
+    color: var(--primary-ebony);
+    cursor: pointer;
+}
+
+.custom-modal--feedback-to-user .custom-modal__body {
+    display: flex;
+    justify-content: center;
+}
+
+.custom-modal--feedback-to-user .custom-modal__footer button {
+    max-width: 160px;
+}
+
+.custom-modal--feedback-to-user .custom-modal__body .textarea {
+    width: 420px;
+    min-height: 144px;
+    padding: 14px 16px;
+    background: var(--primary-white);
+    border: 1px solid var(--light-gray);
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--secondary-gray);
+}
+
+.custom-modal--feedback-to-user .custom-modal__body .textarea:focus {
+    outline: none;
+}
+
+.custom-modal--feedback-to-user .custom-modal__body .textarea::placeholder {
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--secondary-gray);
+}
+
+.custom-modal--feedback-to-user .custom-modal__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.custom-modal--feedback-to-user .custom-modal__footer .feedback-rait {
+    margin-left: 14px;
+}
 
 /* dont copy this */
 .buttons-for-call-modals {
