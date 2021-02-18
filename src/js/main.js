@@ -207,6 +207,10 @@ function toggleModals(slug) {
     $('#cancelBlockUser').on('click', function() {
         customModal.addClass('ct-hidden')
     });
+
+    $('.cancelLearning').on('click', function() {
+        customModal.addClass('ct-hidden')
+    });
 };
 
 $('#wordAdding').on('click', function() {
@@ -229,6 +233,9 @@ $('#feedbackToUser').on('click', function() {
     toggleModals('feedback-to-user');
 });
 
+$('#wordsLearning').on('click', function() {
+    toggleModals('words-learning');
+});
 
 var slider = document.getElementById('slider');
 if (slider) {

@@ -12,7 +12,7 @@
         <button class="ct-button ct-button--primary" id="languageList">Modal 3</button>
         <button class="ct-button ct-button--primary" id="blockUser">Modal 4</button>
         <button class="ct-button ct-button--primary" id="feedbackToUser">Modal 5</button>
-        <button class="ct-button ct-button--primary" id="">Modal 6</button>
+        <button class="ct-button ct-button--primary" id="wordsLearning">Modal 6</button>
     </div>
 
     <!-- modal 1 -->
@@ -276,5 +276,72 @@
             </svg>
         </div>
     </div>
+
+    <!-- modal 6 -->
+
+    <div class="custom-modal custom-modal--words-learning ct-hidden ct-overlay" data-clossable="false">
+        
+        <div class="custom-modal__content first-modal">
+
+            <h3 class="custom-modal__head">
+                <img src="../../img/shared/new-word-modal.png" alt="avatar" class="icon">
+                <p>
+                    Пришло время узучить <br>
+                    несколько новых слов
+                </p>
+            </h3>
+
+            <div class="custom-modal__body">
+                <button class="ct-button ct-button--primary">
+                    <svg width="8" height="14" fill="none" id="start-icon" class="ct-button__icon--left">
+                        <path d="M8 7L0 0v14l8-7z" fill="#fff"/>
+                    </svg>
+                    Начать обучение
+                </button>
+            </div>
+
+            <div class="custom-modal__footer">
+                <button class="ct-reset-button cancelLearning">
+                    Напомнить позже
+                </button>
+            </div>
+
+            <svg width="14" height="14" fill="none" id="closeModalIcon" class="close-icon ct-hidden">
+                <path d="M13.707 12.293a1 1 0 11-1.414 1.414L7 8.414l-5.293 5.293a.997.997 0 01-1.414 0 1 1 0 010-1.414L5.586 7 .293 1.707A1 1 0 111.707.293L7 5.586 12.293.293a1 1 0 111.414 1.414L8.414 7l5.293 5.293z" fill="#2A2F44"/>
+            </svg>
+        </div>
+
+        <div class="custom-modal__content second-modal">
+
+            <h3 class="custom-modal__head">
+                <img src="../../img/shared/avatar2@x.png" alt="avatar" class="avatar">
+                <p>
+                    Поступило 18 слов для изучения <br>
+                    от репетитора Ирина Елова
+                </p>
+            </h3>
+
+            <div class="custom-modal__body">
+                <button class="ct-button ct-button--primary">
+                    <svg width="8" height="14" fill="none" id="start-icon" class="ct-button__icon--left">
+                        <path d="M8 7L0 0v14l8-7z" fill="#fff"/>
+                    </svg>
+                    Начать обучение
+                </button>
+            </div>
+
+            <div class="custom-modal__footer">
+                <button class="ct-reset-button cancelLearning">
+                    Напомнить позже
+                </button>
+            </div>
+
+            <svg width="14" height="14" fill="none" id="closeModalIcon" class="close-icon ct-hidden">
+                <path d="M13.707 12.293a1 1 0 11-1.414 1.414L7 8.414l-5.293 5.293a.997.997 0 01-1.414 0 1 1 0 010-1.414L5.586 7 .293 1.707A1 1 0 111.707.293L7 5.586 12.293.293a1 1 0 111.414 1.414L8.414 7l5.293 5.293z" fill="#2A2F44"/>
+            </svg>
+        </div>
+        
+    </div>
+
 </body>
 </html>

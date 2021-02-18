@@ -152,6 +152,7 @@
 }
 
 .custom-modal--block-user .custom-modal__head .avatar,
+.custom-modal--words-learning .custom-modal__head .avatar,
 .custom-modal--feedback-to-user .custom-modal__head .avatar {
     max-width: 96px;
     margin-bottom: 16px;
@@ -160,12 +161,14 @@
     border-radius: 50%;
 }
 
-.custom-modal--block-user .custom-modal__body button {
+.custom-modal--block-user .custom-modal__body button,
+.custom-modal--words-learning .custom-modal__body button {
     max-width: 240px;
     margin: 0 auto;
 }
 
-.custom-modal--block-user .custom-modal__footer button {
+.custom-modal--block-user .custom-modal__footer button,
+.custom-modal--words-learning .custom-modal__footer button {
     width: 100%;
     font-size: 12px;
     font-weight: 600;
@@ -215,6 +218,28 @@
 
 .custom-modal--feedback-to-user .custom-modal__footer .feedback-rait {
     margin-left: 14px;
+}
+
+.custom-modal--words-learning .first-modal {
+    left: 31%;
+}
+
+.custom-modal--words-learning .second-modal {
+    left: 69%;
+}
+
+.custom-modal--words-learning .custom-modal__head .icon {
+    margin-bottom: 32px;
+}
+
+@media (max-width: 1300px) {
+    .custom-modal--words-learning .first-modal {
+        left: 25%;
+    }
+    
+    .custom-modal--words-learning .second-modal {
+        left: 75%;
+    }
 }
 
 /* dont copy this */
