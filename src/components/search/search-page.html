@@ -18,63 +18,73 @@
         </div>
         <div class="search-page__body">
             <div class="grid-block">
-                <div>
+                <div class="super-custom-selector super-custom-selector--search">
                     <h3 class="selector-title">Я ищу</h3>
-                    <div class="btn-group">
-                        <button type="button" class="ct-button-reset profile-cabinet__select-status dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <div class="flex-block">
+                    <div class="dropdown">
+                        <button type="button" class="ct-reset-button dropdown-toggle" data-toggle="dropdown">
+                            <ins class="ins">
                                 Репетитора или Собеседника
-                            </div>
+                            </ins>
                             <svg width="10" height="10" fill="none" class="img">
                                 <path d="M2 1a1 1 0 11-2 0 1 1 0 012 0zM6 1a1 1 0 11-2 0 1 1 0 012 0zM10 1a1 1 0 11-2 0 1 1 0 012 0zM2 5a1 1 0 11-2 0 1 1 0 012 0zM6 5a1 1 0 11-2 0 1 1 0 012 0zM10 5a1 1 0 11-2 0 1 1 0 012 0zM2 9a1 1 0 11-2 0 1 1 0 012 0zM6 9a1 1 0 11-2 0 1 1 0 012 0zM10 9a1 1 0 11-2 0 1 1 0 012 0z" fill="#C2C8DE"/>
                             </svg>
                         </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">
-                                <div class="flex-block">
+                        <div class="dropdown-menu radio">
+                            <label class="dropdown-item" data-user-class="online">
+                                <input class="jRadioDropdown" type="radio" value="001" name="status">
+                                <i>
                                     Репетитора
-                                </div>
-                            </a>
-                            <a class="dropdown-item" href="#">
-                                <div class="flex-block">
+                                </i>
+                            </label>
+                            <label class="dropdown-item" data-user-class="online">
+                                <input class="jRadioDropdown" type="radio" value="001" name="status">
+                                <i>
                                     Собеседника
-                                </div>
-                            </a>
+                                </i>
+                            </label>
                         </div>
                     </div>
                 </div>
-                <div>
+                <div class="super-custom-selector">
                     <h3 class="selector-title">Пол</h3>
-                    <div class="btn-group">
-                        <button type="button" class="ct-button-reset profile-cabinet__select-status dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <div class="flex-block">
-                                Жен.
-                            </div>
+                    <div class="dropdown">
+                        <button type="button" class="ct-reset-button dropdown-toggle" data-toggle="dropdown">
+                            <ins class="ins">
+                                Пол
+                            </ins>
                             <svg width="10" height="10" fill="none" class="img">
                                 <path d="M2 1a1 1 0 11-2 0 1 1 0 012 0zM6 1a1 1 0 11-2 0 1 1 0 012 0zM10 1a1 1 0 11-2 0 1 1 0 012 0zM2 5a1 1 0 11-2 0 1 1 0 012 0zM6 5a1 1 0 11-2 0 1 1 0 012 0zM10 5a1 1 0 11-2 0 1 1 0 012 0zM2 9a1 1 0 11-2 0 1 1 0 012 0zM6 9a1 1 0 11-2 0 1 1 0 012 0zM10 9a1 1 0 11-2 0 1 1 0 012 0z" fill="#C2C8DE"/>
                             </svg>
                         </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">
-                                <div class="flex-block">
+                        <div class="dropdown-menu radio">
+                            <label class="dropdown-item" data-user-class="online">
+                                <input class="jRadioDropdown" type="radio" value="001" name="status">
+                                <i>
                                     Муж.
-                                </div>
-                            </a>
+                                </i>
+                            </label>
+                            <label class="dropdown-item" data-user-class="online">
+                                <input class="jRadioDropdown" type="radio" value="001" name="status">
+                                <i>
+                                    Жен.
+                                </i>
+                            </label>
                         </div>
                     </div>
                 </div>
                 <div>
                     <h3 class="selector-title">Возраст</h3>
                     <div class="btn-group">
-                        <button type="button" class="ct-button-reset profile-cabinet__select-status dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button type="button" class="custom-dropdown-menu-toggle ct-button-reset profile-cabinet__select-status" id="yearsButton">
                             <div class="flex-block">
-                                25-40
+                                <span id="lowerValue">20</span>-
+                                <span id="upperValue">40</span>
                             </div>
                             <svg width="10" height="10" fill="none" class="img">
                                 <path d="M2 1a1 1 0 11-2 0 1 1 0 012 0zM6 1a1 1 0 11-2 0 1 1 0 012 0zM10 1a1 1 0 11-2 0 1 1 0 012 0zM2 5a1 1 0 11-2 0 1 1 0 012 0zM6 5a1 1 0 11-2 0 1 1 0 012 0zM10 5a1 1 0 11-2 0 1 1 0 012 0zM2 9a1 1 0 11-2 0 1 1 0 012 0zM6 9a1 1 0 11-2 0 1 1 0 012 0zM10 9a1 1 0 11-2 0 1 1 0 012 0z" fill="#C2C8DE"/>
                             </svg>
                         </button>
-                        <div class="dropdown-menu">
+                        <div class="custom-dropdown-menu">
                             <div id="slider"></div>
                             <button class="ct-button ct-button--primary ct-button--mini">
                                 Подтвердить
@@ -82,48 +92,66 @@
                         </div>
                     </div>
                 </div>
-                <div>
+                <div class="super-custom-selector super-custom-selector--learning">
                     <h3 class="selector-title">Носитель языка</h3>
-                    <div class="btn-group">
-                        <button type="button" class="ct-button-reset profile-cabinet__select-status dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <div class="flex-block">
-                                Русский
-                            </div>
+                    <div class="dropdown">
+                        <button type="button" class="ct-reset-button dropdown-toggle" data-toggle="dropdown">
+                            <ins class="ins">
+                                Язык
+                            </ins>
                             <svg width="10" height="10" fill="none" class="img">
                                 <path d="M2 1a1 1 0 11-2 0 1 1 0 012 0zM6 1a1 1 0 11-2 0 1 1 0 012 0zM10 1a1 1 0 11-2 0 1 1 0 012 0zM2 5a1 1 0 11-2 0 1 1 0 012 0zM6 5a1 1 0 11-2 0 1 1 0 012 0zM10 5a1 1 0 11-2 0 1 1 0 012 0zM2 9a1 1 0 11-2 0 1 1 0 012 0zM6 9a1 1 0 11-2 0 1 1 0 012 0zM10 9a1 1 0 11-2 0 1 1 0 012 0z" fill="#C2C8DE"/>
                             </svg>
                         </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">
-                                <div class="flex-block">
+                        <div class="dropdown-menu radio">
+                            <label class="dropdown-item" data-user-class="online">
+                                <input class="jRadioDropdown" type="radio" value="001" name="status">
+                                <i>
+                                    Русский
+                                </i>
+                            </label>
+                            <label class="dropdown-item" data-user-class="online">
+                                <input class="jRadioDropdown" type="radio" value="001" name="status">
+                                <i>
                                     Русский1
-                                </div>
-                            </a>
-                            <a class="dropdown-item" href="#">
-                                <div class="flex-block">
+                                </i>
+                            </label>
+                            <label class="dropdown-item" data-user-class="online">
+                                <input class="jRadioDropdown" type="radio" value="001" name="status">
+                                <i>
                                     Русский2
-                                </div>
-                            </a>
-                            <a class="dropdown-item" href="#">
-                                <div class="flex-block">
+                                </i>
+                            </label>
+                            <label class="dropdown-item" data-user-class="ofline">
+                                <input class="jRadioDropdown" type="radio" value="002" name="status">
+                                <i>
                                     Русский3
-                                </div>
-                            </a>
-                            <a class="dropdown-item" href="#">
-                                <div class="flex-block">
+                                </i>
+                            </label>
+                            <label class="dropdown-item" data-user-class="busy">
+                                <input class="jRadioDropdown" type="radio" value="003" name="status">
+                                <i>
                                     Русский4
-                                </div>
-                            </a>
-                            <a class="dropdown-item" href="#">
-                                <div class="flex-block">
+                                </i>
+                            </label>
+                            <label class="dropdown-item" data-user-class="online">
+                                <input class="jRadioDropdown" type="radio" value="001" name="status">
+                                <i>
                                     Русский5
-                                </div>
-                            </a>
-                            <a class="dropdown-item" href="#">
-                                <div class="flex-block">
+                                </i>
+                            </label>
+                            <label class="dropdown-item" data-user-class="online">
+                                <input class="jRadioDropdown" type="radio" value="001" name="status">
+                                <i>
                                     Русский6
-                                </div>
-                            </a>
+                                </i>
+                            </label>
+                            <label class="dropdown-item" data-user-class="online">
+                                <input class="jRadioDropdown" type="radio" value="001" name="status">
+                                <i>
+                                    Русский7
+                                </i>
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -204,8 +232,8 @@
                 </div>
                 <div class="profile-settings__item">
                     <div class="profile-settings__flex">
-                        <label class="profile-settings__switch" for="checkbox_1">
-                            <input type="checkbox" checked id="checkbox_1" class="profile-settings__input" />
+                        <label class="profile-settings__switch" for="onlyVeryf">
+                            <input type="checkbox" checked id="onlyVeryf" class="profile-settings__input" />
                             <div class="profile-settings__slider profile-settings__slider--round"></div>
                         </label>
                         <h3 class="selector-title" class="profile-settings__text">

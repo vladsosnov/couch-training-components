@@ -433,6 +433,7 @@ body {
 .ct-hidden {
     opacity: 0;
     visibility: hidden;
+    position: absolute;
 }
 
 /* modals overlay */

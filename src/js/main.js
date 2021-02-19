@@ -37,6 +37,14 @@ $('#customizeWordSection').on('click', function(e) {
     toggleActiveClass(this, '.word-learning-settings-form', e)
 });
 
+$('#yearsButton').on('click', function(e) {
+    toggleActiveClass(this, '.custom-dropdown-menu', e)
+});
+
+$('.burger-menu-toggle').on('click', function(e) {
+    toggleActiveClass(this, '.ct-header__nav--mobile', e)
+});
+
 $('#dictionaryCloseIcon').on('click', function(e) {
     e.preventDefault();
     $('#dictionaryCTA').removeClass('active');
@@ -237,11 +245,20 @@ $('#wordsLearning').on('click', function() {
     toggleModals('words-learning');
 });
 
+$('.custom-dropdown-menu').on('click', function() {
+    const lowerValue = $(this).find('.noUi-handle-lower[aria-valuenow]').attr('aria-valuenow');
+    const upperValue = $(this).find('.noUi-handle-upper[aria-valuenow]').attr('aria-valuenow');
+
+    $('#lowerValue').html(Number(lowerValue))
+    $('#upperValue').html(Number(upperValue))
+});
+
 var slider = document.getElementById('slider');
 if (slider) {
     noUiSlider.create(slider, {
         start: [20, 80],
         connect: true,
+        step: 1,
         range: {
             'min': 0,
             'max': 100
