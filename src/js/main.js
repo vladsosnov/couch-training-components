@@ -38,7 +38,15 @@ $('#customizeWordSection').on('click', function(e) {
 });
 
 $('#yearsButton').on('click', function(e) {
-    toggleActiveClass(this, '.custom-dropdown-menu', e)
+    toggleActiveClass(this, '.age-selector .custom-dropdown-menu', e)
+});
+
+$('#priceButton').on('click', function(e) {
+    toggleActiveClass(this, '.price-selector .custom-dropdown-menu', e)
+});
+
+$('#timeButton').on('click', function(e) {
+    toggleActiveClass(this, '.time-selector .custom-dropdown-menu', e)
 });
 
 $('.burger-menu-toggle').on('click', function(e) {
@@ -133,7 +141,7 @@ $('#startLearning').click(function() {
             Остановить
         `
 
-        return
+        return;
     }
 
     $(this).removeClass().addClass('ct-button ct-button--success');
@@ -245,23 +253,72 @@ $('#wordsLearning').on('click', function() {
     toggleModals('words-learning');
 });
 
-$('.custom-dropdown-menu').on('click', function() {
-    const lowerValue = $(this).find('.noUi-handle-lower[aria-valuenow]').attr('aria-valuenow');
-    const upperValue = $(this).find('.noUi-handle-upper[aria-valuenow]').attr('aria-valuenow');
 
-    $('#lowerValue').html(Number(lowerValue))
-    $('#upperValue').html(Number(upperValue))
+// search selectors
+function setSliderValue (item, divSelector) {
+    const lowerValue = $(item).find('.noUi-handle-lower[aria-valuenow]').attr('aria-valuenow');
+    const upperValue = $(item).find('.noUi-handle-upper[aria-valuenow]').attr('aria-valuenow');
+
+    $(`.${divSelector} #lowerValue`).html(Number(lowerValue))
+    $(`.${divSelector} #upperValue`).html(Number(upperValue))
+};
+
+$('.age-selector .custom-dropdown-menu').mousemove(function() {
+    setSliderValue(this, 'age-selector')
 });
 
-var slider = document.getElementById('slider');
-if (slider) {
-    noUiSlider.create(slider, {
+$('.price-selector .custom-dropdown-menu').mousemove(function() {
+    setSliderValue(this, 'price-selector')
+});
+
+$('.time-selector .custom-dropdown-menu').mousemove(function() {
+    setSliderValue(this, 'time-selector')
+});
+
+
+// sliders
+var ageSlider = document.getElementById('ageSlider');
+var priceSlider = document.getElementById('priceSlider');
+var timeSlider = document.getElementById('timeSlider');
+
+if (ageSlider) {
+    noUiSlider.create(ageSlider, {
         start: [20, 80],
         connect: true,
         step: 1,
         range: {
             'min': 0,
             'max': 100
+        },
+        tooltips: true,
+        direction: 'rtl',
+        orientation: 'vertical',
+    });
+}
+
+if (priceSlider) {
+    noUiSlider.create(priceSlider, {
+        start: [200, 800],
+        connect: true,
+        step: 50,
+        range: {
+            'min': 100,
+            'max': 1000
+        },
+        tooltips: true,
+        direction: 'rtl',
+        orientation: 'vertical',
+    });
+}
+
+if (timeSlider) {
+    noUiSlider.create(timeSlider, {
+        start: [0, 24],
+        connect: true,
+        step: 0.15,
+        range: {
+            'min': 0,
+            'max': 24
         },
         tooltips: true,
         direction: 'rtl',

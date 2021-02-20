@@ -72,7 +72,7 @@
                         </div>
                     </div>
                 </div>
-                <div>
+                <div class="age-selector">
                     <h3 class="selector-title">Возраст</h3>
                     <div class="btn-group">
                         <button type="button" class="custom-dropdown-menu-toggle ct-button-reset profile-cabinet__select-status" id="yearsButton">
@@ -85,7 +85,7 @@
                             </svg>
                         </button>
                         <div class="custom-dropdown-menu">
-                            <div id="slider"></div>
+                            <div id="ageSlider"></div>
                             <button class="ct-button ct-button--primary ct-button--mini">
                                 Подтвердить
                             </button>
@@ -172,61 +172,43 @@
                         </div>
                     </form>
                 </div>
-                <div>
-                    <h3 class="selector-title">
-                        Цена<span>(₽ / мин.)</span>
-                    </h3>
+                <div class="price-selector">
+                    <h3 class="selector-title">Цена</h3>
                     <div class="btn-group">
-                        <button type="button" class="ct-button-reset profile-cabinet__select-status dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button type="button" class="custom-dropdown-menu-toggle ct-button-reset profile-cabinet__select-status" id="priceButton">
                             <div class="flex-block">
-                                <div class="user-status user-status--ofline"></div>
-                                Оффлайн
+                                <span id="lowerValue">200</span>-
+                                <span id="upperValue">800</span>
                             </div>
                             <svg width="10" height="10" fill="none" class="img">
                                 <path d="M2 1a1 1 0 11-2 0 1 1 0 012 0zM6 1a1 1 0 11-2 0 1 1 0 012 0zM10 1a1 1 0 11-2 0 1 1 0 012 0zM2 5a1 1 0 11-2 0 1 1 0 012 0zM6 5a1 1 0 11-2 0 1 1 0 012 0zM10 5a1 1 0 11-2 0 1 1 0 012 0zM2 9a1 1 0 11-2 0 1 1 0 012 0zM6 9a1 1 0 11-2 0 1 1 0 012 0zM10 9a1 1 0 11-2 0 1 1 0 012 0z" fill="#C2C8DE"/>
                             </svg>
                         </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">
-                                <div class="flex-block">
-                                    <div class="user-status user-status--online"></div>
-                                    Онлайн
-                                </div>
-                            </a>
-                            <a class="dropdown-item" href="#">
-                                <div class="flex-block">
-                                    <div class="user-status user-status--busy"></div>
-                                    Занят
-                                </div>
-                            </a>
+                        <div class="custom-dropdown-menu">
+                            <div id="priceSlider"></div>
+                            <button class="ct-button ct-button--primary ct-button--mini">
+                                Подтвердить
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div>
+                <div class="time-selector">
                     <h3 class="selector-title">Онлайн не позже</h3>
                     <div class="btn-group">
-                        <button type="button" class="ct-button-reset profile-cabinet__select-status dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button type="button" class="custom-dropdown-menu-toggle ct-button-reset profile-cabinet__select-status" id="timeButton">
                             <div class="flex-block">
-                                <div class="user-status user-status--ofline"></div>
-                                Оффлайн
+                                <span id="lowerValue">08:00</span>-
+                                <span id="upperValue">08:15</span>
                             </div>
                             <svg width="10" height="10" fill="none" class="img">
                                 <path d="M2 1a1 1 0 11-2 0 1 1 0 012 0zM6 1a1 1 0 11-2 0 1 1 0 012 0zM10 1a1 1 0 11-2 0 1 1 0 012 0zM2 5a1 1 0 11-2 0 1 1 0 012 0zM6 5a1 1 0 11-2 0 1 1 0 012 0zM10 5a1 1 0 11-2 0 1 1 0 012 0zM2 9a1 1 0 11-2 0 1 1 0 012 0zM6 9a1 1 0 11-2 0 1 1 0 012 0zM10 9a1 1 0 11-2 0 1 1 0 012 0z" fill="#C2C8DE"/>
                             </svg>
                         </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">
-                                <div class="flex-block">
-                                    <div class="user-status user-status--online"></div>
-                                    Онлайн
-                                </div>
-                            </a>
-                            <a class="dropdown-item" href="#">
-                                <div class="flex-block">
-                                    <div class="user-status user-status--busy"></div>
-                                    Занят
-                                </div>
-                            </a>
+                        <div class="custom-dropdown-menu">
+                            <div id="timeSlider"></div>
+                            <button class="ct-button ct-button--primary ct-button--mini">
+                                Подтвердить
+                            </button>
                         </div>
                     </div>
                 </div>
