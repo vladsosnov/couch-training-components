@@ -22,7 +22,7 @@
     align-items: center;
     font-size: 14px;
     line-height: 14px;
-    color: var(--primary-gray);
+    color: var(--primary-blue);
     cursor: pointer;
 }
 
@@ -46,7 +46,7 @@
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: var(--light-gray);
+    background-color: var(--primary-frames);
 }
 
 .word-list__flex-block {
@@ -66,7 +66,7 @@
 .word-list__flex-block span {
     font-size: 14px;
     line-height: 14px;
-    color: var(--secondary-gray);
+    color: var(--primary-gray);
 }
 
 .word-list__item p {

@@ -71,7 +71,7 @@
     margin-bottom: 0;
     font-size: 12px;
     line-height: 12px;
-    color: var(--secondary-gray);
+    color: var(--primary-gray);
 }
 
 .profile-feedback .item-description {

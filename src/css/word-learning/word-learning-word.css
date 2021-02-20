@@ -17,7 +17,7 @@
     font-size: 24px;
     font-weight: 700;
     line-height: 24px;
-    color: var(--primary-ebony);
+    color: var(--primary-dark);
 }
 
 .word-learning-word__quiz .quiz-item {
@@ -26,7 +26,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--primary-gray);
+    background-color: var(--primary-blue);
     border-radius: 8px;
     font-size: 14px;
     font-weight: 600;
@@ -49,7 +49,7 @@
     margin-bottom: 0;
     font-size: 14px;
     line-height: 48px;
-    color: var(--secondary-gray);
+    color: var(--primary-gray);
 }
 
 .word-learning-word__quiz  .quiz-item--fail {
@@ -57,7 +57,7 @@
 }
 
 .word-learning-word__quiz .quiz-item--chosen {
-    background-color: #c2c8de;
+    background-color: var(--secondary-light);
     cursor: not-allowed;
 }
 
@@ -81,7 +81,7 @@
     margin-bottom: 16px;
     padding: 14px 16px;
     background: var(--light-white);
-    border: 1px solid var(--light-gray);
+    border: 1px solid var(--primary-frames);
     box-sizing: border-box;
     border-radius: 8px;
 }
@@ -90,7 +90,7 @@
 .confrim-group__input input::placeholder {
     font-size: 14px;
     line-height: 14px;
-    color: var(--secondary-gray);
+    color: var(--primary-gray);
 }
 
 .confrim-group__input input:focus {

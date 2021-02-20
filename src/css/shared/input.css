@@ -10,20 +10,20 @@
     border: none;
     font-size: 12px;
     line-height: 12px;
-    color: var(--secondary-gray);
+    color: var(--primary-gray);
 }
 
 .custom-input .input::placeholder {
     font-size: 12px;
     line-height: 12px;
-    color: var(--secondary-gray);
+    color: var(--primary-gray);
 }
 
 .custom-input .input--with-value {
     font-weight: 600;
     font-size: 12px;
     line-height: 12px;
-    color: var(--primary-ebony);
+    color: var(--primary-dark);
 }
 
 .custom-input .input:focus {

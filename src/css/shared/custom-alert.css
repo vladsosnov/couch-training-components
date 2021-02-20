@@ -23,7 +23,7 @@
     max-width: 56px;
     border-radius: 50%;
     padding: 3px;
-    border: 1px solid #C2C8DE;
+    border: 1px solid var(--secondary-light);
     box-sizing: border-box;
 }
 
@@ -61,7 +61,7 @@
 .custom-alert--add-mode .custom-alert__action-text,
 .custom-alert--unblock-mode .custom-alert__action-text,
 .custom-alert--words-send-mode .custom-alert__action-text {
-    color: var(--primary-ebony);
+    color: var(--primary-dark);
 }
 
 .custom-alert__word-alert {
@@ -83,13 +83,13 @@
 
 .custom-alert--devele-mode,
 .custom-alert--block-mode {
-    background-color: var(--primary-ebony);
+    background-color: var(--primary-dark);
 }
 
 .custom-alert--add-mode,
 .custom-alert--unblock-mode,
 .custom-alert--words-send-mode {
-    background-color: #c2c8de;
+    background-color: var(--secondary-light);
 }
 
 .custom-alert--word-mode {

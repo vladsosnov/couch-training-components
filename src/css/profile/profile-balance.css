@@ -33,7 +33,7 @@
 }
 
 .profile-balance__operation-item:not(:last-child) {
-    border-bottom: 1px solid var(--light-gray);
+    border-bottom: 1px solid var(--primary-frames);
 }
 
 .operation-item__date {
@@ -41,7 +41,7 @@
     margin: 0 16px;
     font-size: 14px;
     line-height: 48px;
-    color: var(--primary-ebony);
+    color: var(--primary-dark);
 }
 
 .operation-item__cost {
@@ -50,13 +50,13 @@
     font-size: 14px;
     font-weight: 600;
     line-height: 48px;
-    color: var(--primary-ebony);
+    color: var(--primary-dark);
 }
 
 .operation-item__system {
     font-size: 14px;
     line-height: 48px;
-    color: var(--secondary-gray);
+    color: var(--primary-gray);
 }
 
 @media (max-width: 992px) {

@@ -14,14 +14,14 @@
     font-weight: bold;
     font-size: 24px;
     line-height: 24px;
-    color: var(--primary-ebony);
+    color: var(--primary-dark);
 }
 
 .profile-verification__description {
     margin-bottom: 48px;
     font-size: 14px;
     line-height: 22px;
-    color: var(--primary-ebony);
+    color: var(--primary-dark);
 }
 
 .profile-verification__block {
@@ -35,14 +35,14 @@
     font-size: 14px;
     font-weight: 600;
     line-height: 14px;
-    color: var(--primary-ebony);
+    color: var(--primary-dark);
 }
 
 .verification-step__description {
     margin-bottom: 24px;
     font-size: 12px;
     line-height: 18px;
-    color: var(--secondary-gray);
+    color: var(--primary-gray);
 }
 
 .verification-step__del-wrapper {

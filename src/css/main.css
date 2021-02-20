@@ -26,6 +26,8 @@
 @import './search/search-filter.css';
 @import './search/search-page.css';
 
+@import './chat-page/chat-page.css';
+
 @import './word-learning/word-learning-list.css';
 @import './word-learning/word-learning-word.css';
 @import './word-learning/word-learning-settings-form.css';

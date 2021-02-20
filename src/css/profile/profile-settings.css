@@ -29,7 +29,7 @@
     cursor: pointer;
     transition: .4s;
     background: var(--primary-white);
-    border: 1px solid #c2c8de;
+    border: 1px solid var(--secondary-light);
 }
 
 .profile-settings__slider:before {
@@ -39,7 +39,7 @@
     left: 3px;
     width: 12px;
     height: 12px;
-    background-color: #c2c8de;
+    background-color: var(--secondary-light);
     transition: .4s;
 }
 
@@ -81,19 +81,19 @@
     font-size: 14px;
     font-weight: 600;
     line-height: 14px;
-    color: var(--primary-ebony);
+    color: var(--primary-dark);
 }
 
 .profile-settings__status {
     font-size: 12px;
     line-height: 12px;
-    color: var(--primary-ebony);
+    color: var(--primary-dark);
 }
 
 .profile-settings__item.checked-item .profile-settings__text,
 .profile-settings__item.checked-item .profile-settings__status {
     font-weight: 400;
-    color: var(--secondary-gray);
+    color: var(--primary-gray);
 }
 
 .profile-settings__info-items {
@@ -115,6 +115,10 @@
     background: var(--primary-white);
     box-shadow: 0px 3px 5px rgba(42, 47, 68, 0.1);
     border-radius: 8px;
+}
+
+.profile-settings__info-item .dropdown-menu .dropdown-item:not(:last-child) {
+    border-bottom: 1px solid var(--primary-frames);
 }
 
 .profile-settings__info-item .img {

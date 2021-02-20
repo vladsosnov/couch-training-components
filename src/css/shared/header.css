@@ -15,7 +15,7 @@
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: var(--light-gray);
+    background-color: var(--primary-frames);
     box-shadow: 0px 5px 15px rgba(42, 47, 68, 0.06);
     border-radius: 8px;
 }
@@ -74,7 +74,7 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 14px;
-    color: var(--primary-ebony);
+    color: var(--primary-dark);
 }
 
 .ct-header .link:hover {
@@ -92,7 +92,7 @@
     max-width: 48px;
     padding: 3px;
     border-radius: 50%;
-    border: 1px solid var(--light-gray);
+    border: 1px solid var(--primary-frames);
 }
 
 .ct-header__user-status {
@@ -106,7 +106,7 @@
     font-size: 14px;
     font-weight: 600;
     line-height: 14px;
-    color: var(--primary-ebony);
+    color: var(--primary-dark);
 }
 
 .ct-header .user-role {
@@ -114,7 +114,7 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 14px;
-    color: var(--secondary-gray);
+    color: var(--primary-gray);
 }
 
 .ct-header .user-balance {
@@ -156,7 +156,7 @@
     padding: 20px;
     padding-right: 0;
     cursor: pointer;
-    border-left: 1px solid var(--light-gray);
+    border-left: 1px solid var(--primary-frames);
 }
 
 .user-profile-link--active {

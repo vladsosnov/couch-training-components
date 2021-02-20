@@ -95,6 +95,11 @@ module.exports = {
       template: path.resolve(__dirname, 'src/index.html'),
       filename: 'index.html',
     }),
+
+    new HTMLWebpackPlugin({
+      template: path.resolve(__dirname, 'src/components/chat-page.html'),
+      filename: 'chat-page.html',
+    }),
     
     new HTMLWebpackPlugin({
       template: path.resolve(__dirname, 'src/components/shared/custom-alert.html'),

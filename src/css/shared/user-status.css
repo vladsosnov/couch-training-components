@@ -21,7 +21,7 @@
 }
 
 .user-status--ofline::after {
-    background-color: #c2c8de;
+    background-color: var(--secondary-light);
 }
 
 .user-status--online::after {

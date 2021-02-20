@@ -16,7 +16,7 @@
     font-size: 14px;
     font-weight: 600;
     line-height: 14px;
-    color: var(--primary-ebony);
+    color: var(--primary-dark);
 }
 
 .list-item:not(:last-child) {
@@ -35,7 +35,7 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 14px;
-    color: var(--secondary-gray);
+    color: var(--primary-gray);
     transition: color 0.2s ease-in;
 }
 

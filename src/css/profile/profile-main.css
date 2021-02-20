@@ -34,7 +34,7 @@
     align-items: center;
     font-size: 14px;
     line-height: 14px;
-    color: var(--secondary-gray);
+    color: var(--primary-gray);
     cursor: pointer;
 }
 
@@ -80,7 +80,7 @@
     text-transform: uppercase;
     font-size: 8px;
     line-height: 8px;
-    color: var(--secondary-gray);
+    color: var(--primary-gray);
 }
 
 .profile-sidebar__status div {
@@ -107,7 +107,7 @@
     position: relative;
     margin-bottom: 20px;
     padding: 3px;
-    border: 1px solid #c2c8de;
+    border: 1px solid var(--secondary-light);
     border-radius: 50%;
 }
 
@@ -132,7 +132,7 @@
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
-    color: var(--primary-ebony);
+    color: var(--primary-dark);
 }
 
 .profile-sidebar__user-verefied {
@@ -141,7 +141,7 @@
     align-items: center;
     font-size: 14px;
     line-height: 14px;
-    color: var(--primary-ebony);
+    color: var(--primary-dark);
 }
 
 .profile-sidebar__user-verefied .img {
@@ -154,7 +154,7 @@
     left: 0;
     width: 100%;
     height: 48px;
-    background: linear-gradient(270deg, var(--primary-red) 0%, #FF756D 100%);
+    background: linear-gradient(270deg, var(--primary-red) 0%, var(--primary-pink) 100%);
 }
 
 .profile-sidebar__price::after {
@@ -181,7 +181,7 @@
     position: relative;
     font-size: 12px;
     line-height: 18px;
-    color: var(--primary-ebony);
+    color: var(--primary-dark);
     z-index: 1;
 }
 
@@ -194,7 +194,7 @@
 .profile-sidebar__raiting span {
     font-size: 12px;
     line-height: 12px;
-    color: var(--secondary-gray);
+    color: var(--primary-gray);
 }
 
 .profile-sidebar__comments {
@@ -209,11 +209,11 @@
 .profile-sidebar__mark-input {
     width: 100%;
     padding: 6px 16px;
-    border: 1px solid var(--light-gray);
+    border: 1px solid var(--primary-frames);
     border-radius: 8px;
     font-size: 12px;
     line-height: 18px;
-    color: var(--secondary-gray);
+    color: var(--primary-gray);
 }
 
 .profile-sidebar__mark-input:focus {
@@ -223,7 +223,7 @@
 .profile-sidebar__mark-input::placeholder {
     font-size: 12px;
     line-height: 18px;
-    color: var(--secondary-gray);
+    color: var(--primary-gray);
 }
 
 .profile-sidebar__mark-button {
@@ -261,7 +261,7 @@
 
 .profile-main__dropdown-menu .dropdown-item {
     border-top: 0 !important;
-    border-bottom: 1px solid var(--light-gray);
+    border-bottom: 1px solid var(--primary-frames);
 }
 
 .profile-main__user-raiting,
@@ -294,7 +294,7 @@
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: var(--light-gray);
+    background-color: var(--primary-frames);
 }
 
 .user-info__summary-head {
@@ -307,20 +307,20 @@
     font-size: 16px;
     font-weight: 700;
     line-height: 16px;
-    color: var(--primary-ebony);
+    color: var(--primary-dark);
 }
 
 .user-info__text {
     margin-bottom: 0;
     font-size: 14px;
     line-height: 22px;
-    color: var(--primary-ebony);
+    color: var(--primary-dark);
 }
 
 .user-info__register {
     font-size: 12px;
     line-height: 12px;
-    color: var(--primary-ebony);
+    color: var(--primary-dark);
 }
 
 .raiting-stars {
@@ -336,7 +336,7 @@
 .user-info__raiting-voices {
     font-size: 14px;
     line-height: 14px;
-    color: var(--secondary-gray);
+    color: var(--primary-gray);
 }
 
 .profile-main__user-feedbacks {
@@ -348,7 +348,7 @@
 }
 
 .profile-main__user-feedbacks .user-info__title span {
-    color: var(--secondary-gray);
+    color: var(--primary-gray);
 }
 
 .user-feedback__details {
@@ -364,9 +364,9 @@
     padding: 16px;
     font-size: 14px;
     line-height: 22px;
-    color: var(--primary-ebony);
+    color: var(--primary-dark);
     background: var(--primary-white);
-    border: 1px solid var(--light-gray);
+    border: 1px solid var(--primary-frames);
     box-sizing: border-box;
     border-radius: 0px 8px 8px 8px;
 }
@@ -381,8 +381,8 @@
     padding: 16px;
     font-size: 14px;
     line-height: 22px;
-    color: var(--primary-ebony);
-    background: var(--light-gray);
+    color: var(--primary-dark);
+    background: var(--primary-frames);
     border-radius: 0px 8px 8px 8px;
 }
 
@@ -391,7 +391,7 @@
     font-size: 12px;
     font-weight: 600;
     line-height: 12px;
-    color: var(--primary-ebony);
+    color: var(--primary-dark);
 }
 
 .user-feedback__item .img {
@@ -417,7 +417,7 @@
 .feedback-date {
     font-size: 12px;
     line-height: 12px;
-    color: var(--secondary-gray);
+    color: var(--primary-gray);
 }
 
 .feedback-stars {

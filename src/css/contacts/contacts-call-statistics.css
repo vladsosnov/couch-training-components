@@ -11,7 +11,7 @@
 }
 
 .contacts-call-statistics__back-link:hover {
-    color: var(--primary-gray);
+    color: var(--primary-blue);
 }
 
 .contacts-call-statistics__back-link .img {
@@ -36,7 +36,7 @@
 
 .contacts-call-statistics__title p {
     margin-bottom: 0;
-    color: var(--secondary-gray);
+    color: var(--primary-gray);
 }
 
 .contacts-call-statistics__count {
@@ -45,7 +45,7 @@
     justify-content: flex-end;
     font-size: 14px;
     line-height: 14px;
-    color: var(--secondary-gray);
+    color: var(--primary-gray);
 }
 
 .contacts-call-statistics__duration {
@@ -53,7 +53,7 @@
     font-size: 32px;
     font-weight: 700;
     line-height: 40px;
-    color: var(--primary-ebony);
+    color: var(--primary-dark);
 }
 
 .user-revenue {
@@ -72,7 +72,7 @@
     left: 0;
     width: 100%;
     height: 48px;
-    background: linear-gradient(270deg, var(--primary-red) 0%, #FF756D 100%);;
+    background: linear-gradient(270deg, var(--primary-red) 0%, var(--primary-pink) 100%);;
 }
 
 .user-call-item {
@@ -89,7 +89,7 @@
     bottom: 0;
     width: 100%;
     height: 1px;
-    background-color: var(--light-gray);
+    background-color: var(--primary-frames);
 }
 
 .user-call-item__profit,
@@ -99,7 +99,7 @@
     margin-left: 16px;
     font-size: 14px;
     line-height: 48px;
-    color: var(--primary-ebony);
+    color: var(--primary-dark);
 }
 
 @media (max-width: 992px) {
