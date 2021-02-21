@@ -39,8 +39,3 @@
 .components-item__link:hover {
     color: var(--primary-red);
 }
-
-.components-item__link--ready {
-    color: rgb(108 181 108);
-    font-weight: 700;
-}
