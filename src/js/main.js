@@ -33,6 +33,18 @@ $('#showFilterToggle').on('click', function(e) {
     toggleActiveClass(this, '.search-filter', e)
 });
 
+$('#showSearchToggle').on('click', function(e) {
+    toggleActiveClass(this, '.search-page', e)
+    
+    if ($('#searchToggleTExt').html() === 'Уточнить критерии поиска') {
+        $('#searchToggleTExt').html('Скрыть форму поиска')
+
+        return;
+    }
+
+    $('#searchToggleTExt').html('Уточнить критерии поиска')
+});
+
 $('#customizeWordSection').on('click', function(e) {
     toggleActiveClass(this, '.word-learning-settings-form', e)
 });

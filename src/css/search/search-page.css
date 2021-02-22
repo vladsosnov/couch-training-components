@@ -239,3 +239,32 @@
         grid-template-columns: 325px 325px;
     }
 }
+
+/* Hidden version */
+.search-page--modal.active {
+    max-width: initial;
+    padding: 32px;
+    border-radius: 8px;
+    background-color: rgba(120, 148, 175, 0.2);
+    display: block;
+}
+
+.search-page--modal {
+    display: none;
+    margin-top: 24px;
+}
+
+.search-page--modal .search-page__body .grid-block {
+    margin-bottom: 0;
+}
+
+.search-page--modal .search-page__body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-page--modal .search-page__body .buttons-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
