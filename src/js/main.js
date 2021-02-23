@@ -287,6 +287,9 @@ $('.time-selector .custom-dropdown-menu').mousemove(function() {
     setSliderValue(this, 'time-selector')
 });
 
+$('#onlyVeryf').on('click', function() {
+    $('.veryfy-checkbox').toggleClass('unchecked')
+});
 
 // sliders
 var ageSlider = document.getElementById('ageSlider');
