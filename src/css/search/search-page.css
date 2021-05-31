@@ -1,7 +1,13 @@
 .search-page {
-    max-width: 1150px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+@media (max-width: 1600px) {
+    .search-page {
+        max-width: 992px;
+    }
 }
 
 .search-page__head {
@@ -80,11 +86,20 @@
 }
 
 .search-page__body .grid-block {
+    width: 100%;
     margin-bottom: 48px;
     display: grid;
     grid-template-columns: 358px 168px 168px 358px;
     align-items: flex-end;
     grid-gap: 24px;
+}
+
+@media (max-width: 1600px) {
+    .search-page__body .grid-block {
+        margin-right: 12px;
+        grid-template-columns: 250px 116px 116px 250px;
+        grid-gap: 12px;
+    }
 }
 
 .search-page__body .profile-settings__item {
@@ -211,6 +226,12 @@
     text-decoration: none;
 }
 
+@media (max-width: 1600px) {
+    .search-page .super-custom-selector .ins {
+        font-size: 12px;
+    }
+}
+
 .search-page .super-custom-selector .dropdown-toggle::after {
     display: none;
 }
@@ -253,13 +274,24 @@
     }
 }
 
+@media (max-width: 992px) {
+    .search-page__body .grid-block {
+        grid-template-columns: 300px 300px;
+    }
+}
+
 /* Hidden version */
 .search-page--modal.active {
-    max-width: initial;
     padding: 32px;
     border-radius: 8px;
     background-color: rgba(120, 148, 175, 0.2);
     display: block;
+}
+
+@media (max-width: 992px) {
+    .search-page--modal.active {
+        padding: 24px;
+    }
 }
 
 .search-page--modal {
@@ -276,8 +308,32 @@
     justify-content: space-between;
 }
 
+@media (max-width: 1200px) {
+    .search-page--modal .search-page__body {
+        flex-direction: column-reverse;
+    }
+}
+
 .search-page--modal .search-page__body .buttons-block {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+@media (max-width: 1600px) {
+    .search-page--modal .search-page__body .buttons-block {
+        margin-top: 26px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .search-page--modal .search-page__body .buttons-block {
+        margin-top: 0;
+        margin-bottom: 16px;
+        flex-direction: row;
+    }
+
+    .search-page--modal .search-page__body .buttons-block .ct-button--secondary {
+        margin-right: 12px;
+    }
 }

@@ -48,6 +48,12 @@
     transform: translateX(20px);
 }
 
+@media (max-width: 1600px) {
+    .profile-settings__input:checked + .profile-settings__slider:before {
+        transform: translateX(12px);
+    }
+}
+
 .profile-settings__slider.profile-settings__slider--round {
     border-radius: 10px;
 }
