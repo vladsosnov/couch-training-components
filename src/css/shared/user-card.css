@@ -51,9 +51,11 @@
 
 .user-card__avatar-img {
     max-width: 92px;
+    min-height: 92px;
     padding: 2px;
     border: 1px solid var(--secondary-light);
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .user-car__nationality {
