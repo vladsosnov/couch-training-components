@@ -1,10 +1,18 @@
  .chat-page {
     max-width: 1530px;
-    margin: 0 auto;
     padding: 0 15px;
-    /* DELETE 6 line */
-    padding-top: 80px;
+    margin: 0 auto;
+}
+
+.chat-page__wrapper {
+    padding-top: 30px;
     display: flex;
+}
+
+.chat-page__profile-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .chat-page__contacts-sidebar {
