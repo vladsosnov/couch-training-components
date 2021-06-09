@@ -74,6 +74,12 @@
     position: absolute;
 }
 
+.chat-page__contact-item .contact-item__avatar .img {
+    width: 48px;
+    max-height: 48px;
+    object-fit: cover;
+}
+
 .chat-page__contact-item .contact-item__details {
     width: 78%;
     display: flex;
