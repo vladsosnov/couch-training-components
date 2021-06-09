@@ -56,6 +56,10 @@
     transition: background-color 0.2s ease-in;
 }
 
+.chat-page__contact-item:not(:last-child) {
+    border-bottom: 1px solid var(--primary-frames);
+}
+
 .chat-page__contact-item:hover {
     background-color: var(--primary-blue);
     cursor: pointer;
