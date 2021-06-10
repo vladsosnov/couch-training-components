@@ -24,10 +24,18 @@
     display: block;
 }
 
+.ct-header-menu-icon {
+    width: 32px;
+}
+.ct-header-menu-text {
+    width: 100%;
+}
+
+
 .ct-header__navigation {
     display: flex;
     align-items: center;
-    overflow: hidden;
+   
 }
 
 .ct-header__logo {
@@ -49,15 +57,15 @@
     z-index: 10;
     cursor: pointer;
     transition: all 0.2s ease-in;
-    border-bottom: 2px solid transparent;
+    border-bottom: 1px solid transparent;
 }
 
-.ct-header .nav-list__item:hover,
-.ct-header .nav-list__item--active {
-    background-color: var(--primary-white);
-    box-shadow: 0 3px 6px rgba(42, 47, 68, 0.1), inset 0px -2px 0px var(--primary-red);
-    border-bottom: 2px solid;
-}
+    .ct-header .nav-list__item:hover,
+    .ct-header .nav-list__item--active {
+        background-color: var(--primary-white);
+        box-shadow: 0 3px 6px rgba(42, 47, 68, 0.1), inset 0px -2px 0px var(--primary-red);
+        border-bottom: 1px solid var(--primary-red);
+    }
 
 .ct-header .nav-list__item:hover .link,
 .ct-header .nav-list__item--active .link {
@@ -89,7 +97,8 @@
 .ct-header .user-image {
     position: relative;
     margin-right: 12px;
-    max-width: 48px;
+    width: 48px;
+    height: 48px;
     padding: 3px;
     border-radius: 50%;
     border: 1px solid var(--primary-frames);
@@ -118,6 +127,7 @@
 }
 
 .ct-header .user-balance {
+    white-space: nowrap;
     margin-bottom: 0;
     margin-right: 24px;
     padding: 9px 12px;
@@ -137,6 +147,7 @@
 }
 
 .ct-header .user-profile-link {
+    white-space: nowrap;
     margin-right: 24px;
     font-size: 14px;
     font-weight: 600;
