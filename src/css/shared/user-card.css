@@ -86,9 +86,10 @@
 .user-card__status-role img {
     max-width: 28px;
     background-color: var(--primary-white);
-    border: 1px solid var(--primary-white);
+    border: 1px solid #dbdff0;
     filter: drop-shadow(0px 2px 5px rgba(110, 115, 136, 0.2));
     border-radius: 4px;
+    padding: 1px;
 }
 
 .user-card__role {
