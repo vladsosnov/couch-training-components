@@ -165,6 +165,7 @@
 }
 
 .chat-page__main-topbar {
+    position: relative;
     padding: 12px 0px 12px 30px;
     display: flex;
     justify-content: space-between;
@@ -172,6 +173,7 @@
     background: var(--primary-white);
     box-shadow: 0px 3px 5px rgba(42, 47, 68, 0.1);
     border-radius: 8px 8px 0px 0px;
+    z-index: 1;
 }
 
 .chat-page__chat-user .chat-user__avatar .img,
@@ -337,6 +339,7 @@
         }
 
 .chat-page__main-bottombar {
+    position: relative;
     padding: 16px;
     display: flex;
     align-items: center;
